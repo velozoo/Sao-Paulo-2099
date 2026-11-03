@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "PlayerInput",
+    "maps": [
+        {
+            "name": "UI",
+            "id": "ba3bc817-20f0-424f-bddd-f49ed060228c",
+            "actions": [
+                {
+                    "name": "RightMouseButton",
+                    "type": "Button",
+                    "id": "bdfe0e19-5237-4ffa-b67e-85465442b9a3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3e7c6bdf-547c-40cb-979d-8dac41fde1ee",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightMouseButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

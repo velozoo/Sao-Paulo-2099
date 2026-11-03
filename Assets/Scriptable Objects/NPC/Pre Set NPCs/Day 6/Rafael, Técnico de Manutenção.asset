@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f1a6c629786d046932ea51af5b3a2e, type: 3}
+  m_Name: "Rafael, T\xE9cnico de Manuten\xE7\xE3o"
+  m_EditorClassIdentifier: Assembly-CSharp::GenericPassengerData
+  name: Rafael
+  lastName: Cardoso
+  job: "T\xE9cnico de Manuten\xE7\xE3o"
+  destinyStation: "S\xE9"
+  isAllied: 0
+  problem: 8
+  day: 25
+  month: 12
+  year: 2052
+  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}

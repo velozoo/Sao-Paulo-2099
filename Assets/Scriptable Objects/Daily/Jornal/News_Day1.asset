@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee53c726a467f844a893a87e5df5caf, type: 3}
+  m_Name: News_Day1
+  m_EditorClassIdentifier: Assembly-CSharp::NewsData
+  headline: "ORDEM OU CAOS? Candidatos disputam quem promete o Metr\xF4 mais seguro
+    do s\xE9culo!"
+  dialogueLines:
+  - "A Frente da Ordem Perfeita afirma que o Sol Vermelho est\xE1 transformando as
+    esta\xE7\xF5es em \u201Cpalcos de terrorismo ideol\xF3gico\u201D."
+  - "Seu candidato promete eliminar qualquer manifesta\xE7\xE3o pol\xEDtica dos espa\xE7os
+    p\xFAblicos."
+  - "A Liga da Liberdade Instant\xE2nea responde que a oposi\xE7\xE3o est\xE1 exagerando
+    e promete \u201Cum futuro em que ningu\xE9m precisar\xE1 ter medo de nada\u201D. "
+  - "Questionada sobre o aumento da vigil\xE2ncia, a candidata declara que \u201Cquem
+    n\xE3o deve, n\xE3o teme\u201D."
+  - "No rodap\xE9, um comunicado do Metr\xF4 informa que a entrada de indiv\xEDduos
+    com s\xEDmbolos expl\xEDcitos do Sol Vermelho est\xE1 proibida durante o per\xEDodo
+    eleitoral."
