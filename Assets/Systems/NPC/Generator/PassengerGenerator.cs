@@ -1,5 +1,10 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
+using System;
+
 
 public enum TypesOfProblems
 {
@@ -17,28 +22,118 @@ public enum TypesOfProblems
 public class PassengerGenerator : MonoBehaviour
 {
     [SerializeField] private TypewriterEffect typewriterEffect;
-    private GameObject _currentGOPassenger;
+    [SerializeField] private Image passengerImage;
+    [SerializeField] private RectTransform passengerRectTrans;
+
+    [Header("Walk Anim")]
+    [SerializeField] private float inPos = -512;
+    [SerializeField] private float stopPos = 0;
+    [SerializeField] private float outPos = 512;
+    [SerializeField] private float walkDuration;
+    [SerializeField] private int jumps;
+    [SerializeField] private float jumpHeight;
+
+    [Header("Idle Anim")]
+    [SerializeField] private float idleMinY;
+    [SerializeField] private float idleMaxY;
+    [SerializeField] private float idleSpeed;
+    [SerializeField] private Ease idleEase;
+
+
+    private float initialPosY;
+    DG.Tweening.Sequence _idleSequence;
+
+    private void Start()
+    {
+        initialPosY = passengerRectTrans.anchoredPosition.y;
+
+        passengerRectTrans.anchoredPosition = new Vector2(inPos, initialPosY);
+    }
 
     public void InstantiatePassenger(GenericPassengerData passenger)
     {
-        if (_currentGOPassenger != null)
-            Destroy(_currentGOPassenger);
+        if (passengerImage == null)
+            return;
 
-        _currentGOPassenger = new GameObject();
+        // -512 a 0 dps 0 a 512
+        passengerImage.sprite = passenger.sprite;
 
-        SpriteRenderer passengerSR = _currentGOPassenger.AddComponent<SpriteRenderer>();
-
-        passengerSR.sprite = passenger.sprite;
-
-        _currentGOPassenger.name = passenger.name;
-
-        typewriterEffect.SetText(passengerSR.name);
-
+        // passengerImage.preserveAspect = true;
+        LarpGramManager.Instance.DestroyPost();
+        LarpGramManager.Instance.UpdateLarp(passenger);
+        
         print("Nome: " + passenger.name + " " + passenger.lastName);
         print("Trabalho: " + passenger.job);
         print("Estação de Destino: " + passenger.destinyStation);
         print("Está aliada ao Sol Vermelho? " + passenger.isAllied);
         print("Problema: " + passenger.problem);
         print("Data de Nascimento: " + passenger.day + "/" + passenger.month + "/" + passenger.year);
+    }
+
+    public void StartIdle()
+    {
+        _idleSequence?.Kill();
+
+        _idleSequence = DOTween.Sequence();
+
+        _idleSequence.Append(passengerRectTrans.DOAnchorPosY(idleMaxY, idleSpeed).SetEase(idleEase));
+        _idleSequence.Append(passengerRectTrans.DOAnchorPosY(idleMinY, idleSpeed).SetEase(idleEase));
+
+        _idleSequence.SetLoops(-1);
+    }
+
+    public void StopIdle()
+    {
+        _idleSequence?.Kill();
+    }
+
+    public void MoveInPassenger(Action onComplete)
+    {
+        StopIdle();
+        passengerRectTrans.DOKill();
+
+        passengerRectTrans.anchoredPosition = new Vector2(inPos, initialPosY);
+
+        DG.Tweening.Sequence sequence = DOTween.Sequence();
+
+        sequence.Append(passengerRectTrans.DOAnchorPosX(stopPos, walkDuration).SetEase(Ease.InOutSine));
+        sequence.Join(passengerRectTrans.DOAnchorPosY(initialPosY + jumpHeight, walkDuration / jumps)
+            .SetLoops(jumps, LoopType.Yoyo).SetEase(Ease.InOutSine));
+
+        sequence.OnComplete(() =>
+        {
+            onComplete?.Invoke();
+            StartIdle();
+        });
+    }
+    public void MoveOutPassenger(Action onComplete)
+    {
+        StopIdle();
+        passengerRectTrans.DOKill();
+
+        DG.Tweening.Sequence sequence = DOTween.Sequence();
+
+        sequence.Append(passengerRectTrans.DOAnchorPosX(outPos, walkDuration).SetEase(Ease.InCubic));
+        sequence.Join(passengerRectTrans.DOAnchorPosY(initialPosY + jumpHeight, walkDuration / jumps)
+            .SetLoops(jumps, LoopType.Yoyo).SetEase(Ease.InOutSine));
+
+        sequence.OnComplete(() => onComplete?.Invoke());
+    }
+
+    public void MoveAvoidPassenger(Action onComplete)
+    {
+        StopIdle();
+        passengerRectTrans.DOKill();
+
+        DG.Tweening.Sequence sequence = DOTween.Sequence();
+
+        sequence.Append(passengerRectTrans.DOAnchorPosX(inPos, walkDuration).SetEase(Ease.InCubic));
+        sequence.Join(passengerRectTrans.DOAnchorPosY(initialPosY + jumpHeight, walkDuration / jumps)
+            .SetLoops(jumps, LoopType.Yoyo).SetEase(Ease.InOutSine));
+
+        sequence.OnComplete(() =>
+        {
+            onComplete?.Invoke();
+        });
     }
 }

@@ -15,10 +15,11 @@ MonoBehaviour:
   name: Edna
   lastName: Rakib
   job: Social Media
-  destinyStation: Brigadeiro
+  destinyStation: Jabaquara
   isAllied: 0
   problem: 5
   day: 23
   month: 7
   year: 2057
-  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  sprite: {fileID: -1074667668689054642, guid: 916c77136131a3d46ab484993e8842f5, type: 3}
+  larpGramData: {fileID: 0}

@@ -16,5 +16,7 @@ public class GenericPassengerData : ScriptableObject
     public int year;
 
     public Sprite sprite;
+
+    public LarpGramData larpGramData;
     
 }

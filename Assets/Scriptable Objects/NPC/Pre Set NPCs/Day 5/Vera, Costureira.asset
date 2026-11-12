@@ -22,3 +22,4 @@ MonoBehaviour:
   month: 2
   year: 2055
   sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  larpGramData: {fileID: 11400000, guid: 5d9fd49215936a9408bd8b2957eb82a5, type: 2}
