@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee53c726a467f844a893a87e5df5caf, type: 3}
+  m_Name: News_Day7
+  m_EditorClassIdentifier: Assembly-CSharp::NewsData
+  headline: "ELEI\xC7\xD5ES \xC0S PORTAS: QUEM PROMETE A CIDADE MAIS LIVRE TAMB\xC9M
+    QUER SABER TUDO SOBRE VOC\xCA!"
+  dialogueLines:
+  - "A Frente da Ordem Perfeita anuncia que o novo sistema de fiscaliza\xE7\xE3o
+    \xE9 um sucesso e promete expandi-lo para \xF4nibus aut\xF4nomos, hospitais e
+    pr\xE9dios p\xFAblicos caso ven\xE7a as elei\xE7\xF5es."
+  - "A Liga da Liberdade Instant\xE2nea afirma que o sistema precisa de \u201Cajustes
+    humanos\u201D, mas n\xE3o prop\xF5e revogar os decretos. "
+  - "Seu slogan muda para \u201CLiberdade \xE9 ter as melhores op\xE7\xF5es\u201D,
+    acompanhado de um an\xFAncio de assinatura premium para transporte."
+  - "O Sol Vermelho convoca manifesta\xE7\xF5es em diferentes esta\xE7\xF5es. O Metr\xF4
+    emite um \xFAltimo comunicado para os funcion\xE1rios:"
+  - "todos os protocolos permanecem em vigor e nenhuma exce\xE7\xE3o informal ser\xE1
+    tolerada."

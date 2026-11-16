@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b86d91ff5b11341b785e89d40d1e35, type: 3}
+  m_Name: Diary_Day3
+  m_EditorClassIdentifier: Assembly-CSharp::DiaryData
+  dayTitle: Dia 21 de setembro de 2089
+  paragraphs:
+  - "O procedimento j\xE1 se faz sozinho. Abro, leio, decido, fecho. Percebi hoje
+    que tenho um ritmo, e achei isso pior do que qualquer outra coisa que poderia
+    ter percebido."
+  - "Uma atendente de farm\xE1cia usava um bottonzinho do Sol Vermelho no canto da
+    camiseta e dizia que o achava bonito, que era est\xE9tica. N\xE3o duvido. Pensei
+    que talvez a est\xE9tica seja justamente a maneira como as coisas come\xE7am
+    a significar algo."
+  - "Uma mulher descreveu uma rota que passava por uma esta\xE7\xE3o inacess\xEDvel.
+    Disse que fazia o trajeto toda semana e que ningu\xE9m a avisara da mudan\xE7a.
+    Era poss\xEDvel, j\xE1 que ningu\xE9m avisa ningu\xE9m de nada aqui dentro. Mas
+    a regra me pede desconfian\xE7a, e o que se pede da desconfian\xE7a \xE9 que
+    ela exista, n\xE3o que seja justa."
+  - "O comunicado do Metr\xF4 de manh\xE3 dizia para evitar decis\xF5es baseadas
+    em simpatia pessoal. Reli a frase tr\xEAs vezes. Acho que \xE9 a \xFAnica instru\xE7\xE3o
+    do dia que nunca precisei de esfor\xE7o para entender."

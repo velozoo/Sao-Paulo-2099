@@ -31,7 +31,7 @@ public class PassengerGenerator : MonoBehaviour
     [SerializeField] private float outPos = 512;
     [SerializeField] private float walkDuration;
     [SerializeField] private int jumps;
-    [SerializeField] private float jumpHeight;
+    [SerializeField] private float walkMaxY;
 
     [Header("Idle Anim")]
     [SerializeField] private float idleMinY;
@@ -45,7 +45,7 @@ public class PassengerGenerator : MonoBehaviour
 
     private void Start()
     {
-        initialPosY = passengerRectTrans.anchoredPosition.y;
+        initialPosY = idleMinY;
 
         passengerRectTrans.anchoredPosition = new Vector2(inPos, initialPosY);
     }
@@ -59,20 +59,18 @@ public class PassengerGenerator : MonoBehaviour
         passengerImage.sprite = passenger.sprite;
 
         // passengerImage.preserveAspect = true;
-        LarpGramManager.Instance.DestroyPost();
-        LarpGramManager.Instance.UpdateLarp(passenger);
-        
-        print("Nome: " + passenger.name + " " + passenger.lastName);
-        print("Trabalho: " + passenger.job);
-        print("Estação de Destino: " + passenger.destinyStation);
-        print("Está aliada ao Sol Vermelho? " + passenger.isAllied);
-        print("Problema: " + passenger.problem);
-        print("Data de Nascimento: " + passenger.day + "/" + passenger.month + "/" + passenger.year);
+        if (passenger.larpGramData != null)
+        {
+            LarpGramManager.Instance.DestroyPost();
+            LarpGramManager.Instance.UpdateLarp(passenger);
+        }
+        DocumentsManager.Instance.UpdateDocuments(passenger);
     }
 
     public void StartIdle()
     {
         _idleSequence?.Kill();
+        passengerRectTrans.DOKill();
 
         _idleSequence = DOTween.Sequence();
 
@@ -97,7 +95,7 @@ public class PassengerGenerator : MonoBehaviour
         DG.Tweening.Sequence sequence = DOTween.Sequence();
 
         sequence.Append(passengerRectTrans.DOAnchorPosX(stopPos, walkDuration).SetEase(Ease.InOutSine));
-        sequence.Join(passengerRectTrans.DOAnchorPosY(initialPosY + jumpHeight, walkDuration / jumps)
+        sequence.Join(passengerRectTrans.DOAnchorPosY(initialPosY + walkMaxY, walkDuration / jumps)
             .SetLoops(jumps, LoopType.Yoyo).SetEase(Ease.InOutSine));
 
         sequence.OnComplete(() =>
@@ -114,7 +112,7 @@ public class PassengerGenerator : MonoBehaviour
         DG.Tweening.Sequence sequence = DOTween.Sequence();
 
         sequence.Append(passengerRectTrans.DOAnchorPosX(outPos, walkDuration).SetEase(Ease.InCubic));
-        sequence.Join(passengerRectTrans.DOAnchorPosY(initialPosY + jumpHeight, walkDuration / jumps)
+        sequence.Join(passengerRectTrans.DOAnchorPosY(initialPosY + walkMaxY, walkDuration / jumps)
             .SetLoops(jumps, LoopType.Yoyo).SetEase(Ease.InOutSine));
 
         sequence.OnComplete(() => onComplete?.Invoke());
@@ -128,7 +126,7 @@ public class PassengerGenerator : MonoBehaviour
         DG.Tweening.Sequence sequence = DOTween.Sequence();
 
         sequence.Append(passengerRectTrans.DOAnchorPosX(inPos, walkDuration).SetEase(Ease.InCubic));
-        sequence.Join(passengerRectTrans.DOAnchorPosY(initialPosY + jumpHeight, walkDuration / jumps)
+        sequence.Join(passengerRectTrans.DOAnchorPosY(initialPosY + walkMaxY, walkDuration / jumps)
             .SetLoops(jumps, LoopType.Yoyo).SetEase(Ease.InOutSine));
 
         sequence.OnComplete(() =>

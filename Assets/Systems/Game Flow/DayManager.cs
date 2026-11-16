@@ -1,16 +1,105 @@
+using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DayManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [Header("Managers")]
+    [SerializeField] private NewsManager newsManager;
+    [SerializeField] private EmailManager emailManager;
+    [SerializeField] private PassengerManager passengerManager;
+
+    [Header("Delay Before Each Event")]
+    [SerializeField] private float newsDelay;
+    [SerializeField] private float emailDelay;
+    [SerializeField] private float passengerDelay;
+
+    [Header("Clock Out")]
+    [SerializeField] private Button clockOutButton;
+    [SerializeField] private float fadeInDuration;
+    [SerializeField] private float fadeOutDuration;
+
+
+    private bool _newsFinished;
+    private bool _passengersFinished;
+
+    private Coroutine _dayCoroutine;
+
+    public static DayManager Instance;
+    private void Awake()
     {
-        
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        StartDay();
+    }
+
+    public void StartDay()
+    {
+        if (_dayCoroutine != null)
+            return;
+
+        _dayCoroutine = StartCoroutine(DaySequence());
+    }
+
+    private IEnumerator DaySequence()
+    {
+        GameManager.Instance.UpdateMechanic();
+
+        _newsFinished = false;
+        _passengersFinished = false;
+        clockOutButton.interactable = false;
+
+        yield return new WaitForSeconds(3);
+
+        Task fadeTask = ScreenFader.Instance.FadeIn(fadeInDuration);
+
+        yield return new WaitUntil(() => fadeTask.IsCompleted);
+
+        yield return new WaitForSeconds(newsDelay);
+
+        newsManager.BeginNews(OnNewsFinished);
+
+        yield return new WaitUntil(() => _newsFinished);
+
+        yield return new WaitForSeconds(emailDelay);
+
+        emailManager.StartEmail();
+
+        yield return new WaitForSeconds(passengerDelay);
+
+        passengerManager.StartPassenger(OnPassengerFinished);
+
+        yield return new WaitUntil(() => _passengersFinished);
+        _dayCoroutine = null;
+    }
+
+    private void OnNewsFinished()
+    {
+        _newsFinished = true;
+    }
+
+    private void OnPassengerFinished()
+    {
+        _passengersFinished = true;
+        clockOutButton.interactable = true;
+    }
+
+    public void ClockOut()
+    {
+        StartCoroutine(WaitBlackScreen());
+    }
+
+    private IEnumerator WaitBlackScreen()
+    {
+        Task fadeTask = ScreenFader.Instance.FadeOut(fadeOutDuration);
+        yield return new WaitForSeconds(3);
+        DiaryManager.Instance.ToggleDiary();
     }
 }

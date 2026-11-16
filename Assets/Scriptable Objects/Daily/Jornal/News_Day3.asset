@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee53c726a467f844a893a87e5df5caf, type: 3}
+  m_Name: News_Day3
+  m_EditorClassIdentifier: Assembly-CSharp::NewsData
+  headline: "PESQUISA ELEITORAL: 51% QUEREM MAIS SEGURAN\xC7A; 49% N\xC3O CONCORDAM
+    COM A FORMA COMO A SEGURAN\xC7A \xC9 DEFINIDA!"
+  dialogueLines:
+  - "A Frente da Ordem Perfeita comemora a aprova\xE7\xE3o popular das novas inspe\xE7\xF5es
+    e declara que \u201Ccada catraca \xE9 uma vit\xF3ria contra o caos\u201D."
+  - "A Liga da Liberdade Instant\xE2nea responde que o Metr\xF4 est\xE1 confundindo
+    seguran\xE7a com obedi\xEAncia."
+  - "Um comentarista independente observa que ambos os candidatos prometem proteger
+    a popula\xE7\xE3o, mas discordam sobre quem merece ser protegido."
+  - "Enquanto isso, o n\xFAmero de protestos em torno das esta\xE7\xF5es aumenta."
+  - "O Metr\xF4 recomenda que seus funcion\xE1rios sigam rigorosamente o protocolo,
+    evitando \u201Cdecis\xF5es baseadas em simpatia pessoal\u201D."

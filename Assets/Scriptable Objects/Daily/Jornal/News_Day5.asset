@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee53c726a467f844a893a87e5df5caf, type: 3}
+  m_Name: News_Day5
+  m_EditorClassIdentifier: Assembly-CSharp::NewsData
+  headline: "CANDIDATOS DISPUTAM O PR\xCAMIO DE MAIS VIGILANTE: NOVAS PROMESSAS PARA
+    UM FUTURO \u201CSEM SURPRESAS\u201D!"
+  dialogueLines:
+  - "A Frente da Ordem Perfeita anuncia apoio integral ao novo Decreto de Neutralidade
+    P\xFAblica, afirmando que \u201Cn\xE3o existe liberdade quando o cidad\xE3o convive
+    com ideias perigosas\u201D."
+  - "A Liga da Liberdade Instant\xE2nea responde com o slogan \u201CSeu perfil, sua
+    liberdade\u201D, embora seu programa eleitoral proponha a venda de an\xE1lises
+    an\xF4nimas de comportamento para empresas parceiras."
+  - "Em meio \xE0 disputa, representantes do Sol Vermelho acusam o Metr\xF4 de transformar
+    o deslocamento cotidiano em uma esp\xE9cie de julgamento pol\xEDtico. "
+  - "A empresa responde que \u201Co passageiro regular n\xE3o tem motivos para se
+    preocupar\u201D."

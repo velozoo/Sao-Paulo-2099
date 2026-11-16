@@ -4,5 +4,6 @@ using UnityEngine;
 public class NewsData : ScriptableObject
 {
     public string headline;
+    [TextArea(2, 10)]
     public string[] dialogueLines;
 }

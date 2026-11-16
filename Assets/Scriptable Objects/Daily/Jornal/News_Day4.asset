@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee53c726a467f844a893a87e5df5caf, type: 3}
+  m_Name: News_Day4
+  m_EditorClassIdentifier: Assembly-CSharp::NewsData
+  headline: "METR\xD4 LAN\xC7A NOVA POL\xCDTICA: POSTAR TAMB\xC9M PODE IMPEDIR VOC\xCA
+    DE VIAJAR!"
+  dialogueLines:
+  - "A Frente da Ordem Perfeita anuncia apoio integral ao novo Decreto de Neutralidade
+    P\xFAblica, afirmando que \u201Cn\xE3o existe liberdade quando o cidad\xE3o convive
+    com ideias perigosas\u201D."
+  - "A Liga da Liberdade Instant\xE2nea responde que o Metr\xF4 est\xE1 confundindo
+    seguran\xE7a com obedi\xEAncia."
+  - "mas publica um comunicado patrocinado por uma empresa de an\xE1lise comportamental
+    que promete \u201Cclassificar discursos de maneira inteligente\u201D."
+  - "O Metr\xF4 informa que todo passageiro suspeito dever\xE1 passar por uma verifica\xE7\xE3o
+    de rede social. "
+  - "Qualquer men\xE7\xE3o ao Sol Vermelho no LarpGram ser\xE1 considerada motivo
+    para impedir a entrada."

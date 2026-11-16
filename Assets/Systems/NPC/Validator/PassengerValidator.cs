@@ -4,27 +4,38 @@ public class PassengerValidator : MonoBehaviour
 {
     public void Pass()
     {
-        if (PassengerShouldPass() == true && GameManager.Instance._passengerIsTransitioning != true)
+        if (!PassengerManager.Instance.CanMakeDecision)
+            return;
+
+        if (PassengerShouldPass())
             print("_______________________acertou_______________________");
         else
             print("_______________________errou_______________________");
 
-        GameManager.Instance.NextPassenger(false);
+        PassengerManager.Instance.NextPassenger(false);
     }
 
     public void NotPass()
     {
-        if (PassengerShouldPass() == false && GameManager.Instance._passengerIsTransitioning != true)
+        if (!PassengerManager.Instance.CanMakeDecision)
+            return;
+
+        if (!PassengerShouldPass())
             print("_______________________acertou_______________________");
         else
             print("_______________________errou_______________________");
 
-        GameManager.Instance.NextPassenger(true);
+        PassengerManager.Instance.NextPassenger(true);
     }
 
     public bool PassengerShouldPass()
     {
-        TypesOfProblems problem = GameManager.Instance._currentPassenger.problem;
+        if (PassengerManager.Instance._currentPassenger == null)
+        {
+            Debug.LogError("Não existe passageiro para validar!");
+            return false;
+        }
+        TypesOfProblems problem = PassengerManager.Instance._currentPassenger.problem;
 
         if (problem == TypesOfProblems.None)
             return true;

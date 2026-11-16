@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -7,7 +8,6 @@ public class TypewriterEffect : MonoBehaviour
 {
     private TMP_Text _textBox;
 
-    // Just testing
     [Header("Test String")]
     [SerializeField] private string testText;
 
@@ -16,14 +16,17 @@ public class TypewriterEffect : MonoBehaviour
 
     private WaitForSeconds _simpleDelay;
     private WaitForSeconds _interpunctuationDelay;
+    private WaitForSeconds _finalSetenceDelay;
 
     [Header("Typewriter Setting")]
     [SerializeField] private float characterPerSecond = 20;
     [SerializeField] private float interpunctuationDelay = 0.5f;
+    [SerializeField] private float finalSetenceDelay = 5f;
 
-    
+
     private void Awake()
     {
+
         _textBox = GetComponent<TMP_Text>();
 
         if (characterPerSecond <= 0)
@@ -32,14 +35,12 @@ public class TypewriterEffect : MonoBehaviour
         _simpleDelay = new WaitForSeconds(1 / characterPerSecond);
 
         _interpunctuationDelay = new WaitForSeconds(interpunctuationDelay);
+
+        _finalSetenceDelay = new WaitForSeconds(finalSetenceDelay);
     }
 
-    private void Start()
-    {
-        SetText(testText);
-    }
 
-    public void SetText(string text)
+    public void SetText(string text, Action onComplete = null)
     {
         if (_typewriterCoroutine != null)
             StopCoroutine(_typewriterCoroutine);
@@ -49,10 +50,10 @@ public class TypewriterEffect : MonoBehaviour
         _textBox.maxVisibleCharacters = 0;
         _currentVisibleCharacterIndex = 0;
 
-        _typewriterCoroutine = StartCoroutine(Typewriter());
+        _typewriterCoroutine = StartCoroutine(Typewriter(onComplete));
     }
 
-    private IEnumerator Typewriter()
+    private IEnumerator Typewriter(Action onComplete)
     {
         TMP_TextInfo textInfo = _textBox.textInfo;
 
@@ -62,10 +63,14 @@ public class TypewriterEffect : MonoBehaviour
 
             _textBox.maxVisibleCharacters++;
 
-            if (character == '?' ||  character == '.' || character == ',' || character == ';' ||
+            if (character == '?' || character == ',' || character == ';' ||
                 character == ':' || character == '!' || character == '-')
             {
                 yield return _interpunctuationDelay;
+            }
+            else if (character == '.')
+            {
+                yield return _finalSetenceDelay;
             }
             else
             {
@@ -74,7 +79,8 @@ public class TypewriterEffect : MonoBehaviour
 
             _currentVisibleCharacterIndex++;
         }
-
         _typewriterCoroutine = null;
+
+        onComplete?.Invoke();
     }
 }

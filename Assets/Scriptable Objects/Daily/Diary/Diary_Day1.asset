@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b86d91ff5b11341b785e89d40d1e35, type: 3}
+  m_Name: Diary_Day1
+  m_EditorClassIdentifier: Assembly-CSharp::DiaryData
+  dayTitle: Dia 19 de Setembro de 2089
+  paragraphs:
+  - "Primeiro dia na cabine. Ela \xE9 menor do que eu imaginava, e a janela de vidro
+    faz com que eu veja todos e ningu\xE9m me veja direito. Talvez seja essa a vantagem
+    do cargo."
+  - "Pela manh\xE3, o notici\xE1rio. Dois candidatos prometem a mesma coisa com palavras
+    diferentes, e eu ouvi os dois com a mesma aten\xE7\xE3o, isto \xE9, nenhuma.
+    A regra do dia era simples: olhar quem trouxesse o Sol Vermelho no corpo. Um
+    entregador tinha a ins\xEDgnia bordada na jaqueta e falava do turno que perderia
+    por causa de um bordado. Pensei que \xE9 estranho um peda\xE7o de linha valer
+    tanto."
+  - "Uma faxineira usava um casaco vermelho e nada mais. Fiquei algum tempo pensando
+    se uma cor basta para dizer alguma coisa, e n\xE3o cheguei a conclus\xE3o alguma.
+    Um estudante falou de uma esta\xE7\xE3o que n\xE3o existe no mapa e disse que
+    ia at\xE9 l\xE1 todos os dias. Por um instante senti vontade de acreditar nele,
+    e ainda n\xE3o sei quanto essa vontade vale diante de um mapa."
+  - "Descobri que h\xE1 uma frase pronta \xE0 espera de quem reclama. Ela j\xE1 estava
+    na minha boca antes de eu chegar, e isso me incomodou mais do que qualquer reclama\xE7\xE3o."
+  - "Volto para casa sem cansa\xE7o, o que me preocupa um pouco. Um trabalho que
+    n\xE3o cansa no primeiro dia ou \xE9 muito leve, ou j\xE1 come\xE7ou a me usar."
