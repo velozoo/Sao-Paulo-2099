@@ -6,4 +6,8 @@ public class DiaryData : ScriptableObject
     public string dayTitle;
     [TextArea(5, 20)]
     public string[] paragraphs;
+
+    /*public string dayTitle = " ";
+    [TextArea(5, 20)]
+    public string pageContent;*/
 }

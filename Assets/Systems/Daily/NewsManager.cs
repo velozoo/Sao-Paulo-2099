@@ -7,6 +7,9 @@ using UnityEngine;
 
 public class NewsManager : MonoBehaviour
 {
+    [Header("Animation")]
+    [SerializeField] private NewsAnimation newsAnimation;
+
     [Header("Bom Dia Text")]
     [SerializeField] private TMP_Text bdsText;
     [SerializeField] private TMPWriter bdsWriter;
@@ -42,13 +45,16 @@ public class NewsManager : MonoBehaviour
 
     public void BeginNews(Action onComplete)
     {
-        _onNewsComplete = onComplete;
+        newsAnimation.OpenScreen(() =>
+        {
+            _onNewsComplete = onComplete;
 
-        _currentDay = GameManager.Instance._currentDay;
-        _currentDay -= 1;
-        print(newsData[_currentDay]);
-        ResetAll();
-        PlayCatchPhrase();
+            _currentDay = GameManager.Instance._currentDay;
+            _currentDay -= 1;
+            print(newsData[_currentDay]);
+            ResetAll();
+            PlayCatchPhrase();
+        });
     }
 
     public void PlayCatchPhrase()
@@ -63,8 +69,11 @@ public class NewsManager : MonoBehaviour
             _currentTextLineShow = 0;
             ResetAll();
 
-            _onNewsComplete?.Invoke();
-            _onNewsComplete = null;
+            newsAnimation.CloseScreen(() =>
+            {
+                _onNewsComplete?.Invoke();
+                _onNewsComplete = null;
+            });
             return;
         }
 

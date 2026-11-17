@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e749cf0da5460a24b92b7b170af28432, type: 3}
   m_Name: LG Celia Bueno
   m_EditorClassIdentifier: Assembly-CSharp::LarpGramData
-  profilePicture: {fileID: 3716967591569974123, guid: e404a1447e0185d4ab49837271a75f7b, type: 3}
+  profilePicture: {fileID: 21300000, guid: 87e97de740157334190c1b9cb43ded44, type: 3}
   nickname: cicimn_
   numberPosts: 1
   followers: 1.753

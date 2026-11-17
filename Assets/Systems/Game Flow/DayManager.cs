@@ -9,6 +9,7 @@ public class DayManager : MonoBehaviour
     [SerializeField] private NewsManager newsManager;
     [SerializeField] private EmailManager emailManager;
     [SerializeField] private PassengerManager passengerManager;
+    [SerializeField] private DesktopScreen desktopScreen;
 
     [Header("Delay Before Each Event")]
     [SerializeField] private float newsDelay;
@@ -19,6 +20,9 @@ public class DayManager : MonoBehaviour
     [SerializeField] private Button clockOutButton;
     [SerializeField] private float fadeInDuration;
     [SerializeField] private float fadeOutDuration;
+
+    [Header("Debug")]
+    [SerializeField] private bool doNews;
 
 
     private bool _newsFinished;
@@ -52,21 +56,25 @@ public class DayManager : MonoBehaviour
     {
         GameManager.Instance.UpdateMechanic();
 
+        desktopScreen._hasOpenToday = false;
         _newsFinished = false;
         _passengersFinished = false;
         clockOutButton.interactable = false;
 
-        yield return new WaitForSeconds(3);
+        //yield return new WaitForSeconds(3);
 
         Task fadeTask = ScreenFader.Instance.FadeIn(fadeInDuration);
 
         yield return new WaitUntil(() => fadeTask.IsCompleted);
 
-        yield return new WaitForSeconds(newsDelay);
+        if (doNews)
+        {
+            yield return new WaitForSeconds(newsDelay);
 
-        newsManager.BeginNews(OnNewsFinished);
+            newsManager.BeginNews(OnNewsFinished);
 
-        yield return new WaitUntil(() => _newsFinished);
+            yield return new WaitUntil(() => _newsFinished);
+        }
 
         yield return new WaitForSeconds(emailDelay);
 
@@ -91,15 +99,18 @@ public class DayManager : MonoBehaviour
         clockOutButton.interactable = true;
     }
 
-    public void ClockOut()
+    public async void ClockOut()
     {
-        StartCoroutine(WaitBlackScreen());
-    }
+        await ScreenFader.Instance.FadeTransition(
+            fadeOutDuration,
+            fadeInDuration,
+            3f,
 
-    private IEnumerator WaitBlackScreen()
-    {
-        Task fadeTask = ScreenFader.Instance.FadeOut(fadeOutDuration);
-        yield return new WaitForSeconds(3);
-        DiaryManager.Instance.ToggleDiary();
+            () =>
+            {
+                DiaryManager.Instance.ToggleDiary();
+                return Task.CompletedTask;
+            }
+        );
     }
 }

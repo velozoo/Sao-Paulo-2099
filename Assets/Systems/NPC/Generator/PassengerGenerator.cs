@@ -41,6 +41,7 @@ public class PassengerGenerator : MonoBehaviour
 
 
     private float initialPosY;
+    private float _currentPosY;
     DG.Tweening.Sequence _idleSequence;
 
     private void Start()
@@ -77,12 +78,30 @@ public class PassengerGenerator : MonoBehaviour
         _idleSequence.Append(passengerRectTrans.DOAnchorPosY(idleMaxY, idleSpeed).SetEase(idleEase));
         _idleSequence.Append(passengerRectTrans.DOAnchorPosY(idleMinY, idleSpeed).SetEase(idleEase));
 
-        _idleSequence.SetLoops(-1);
+        _idleSequence.SetLoops(-1, LoopType.Yoyo);
     }
 
     public void StopIdle()
     {
         _idleSequence?.Kill();
+    }
+
+    public void IdleTransition(Action onComplete)
+    {
+        _currentPosY = passengerRectTrans.anchoredPosition.y;
+
+        if (_currentPosY == initialPosY) 
+            onComplete?.Invoke();
+
+        float distance = MathF.Abs(_currentPosY - initialPosY);
+        float totalDistance = MathF.Abs(idleMaxY - initialPosY);
+
+        float duration = idleSpeed * (distance / totalDistance);
+
+        passengerRectTrans.DOAnchorPosY(initialPosY, duration / 2).SetEase(idleEase).OnComplete(() =>
+        {
+            onComplete?.Invoke();
+        });
     }
 
     public void MoveInPassenger(Action onComplete)
@@ -101,37 +120,44 @@ public class PassengerGenerator : MonoBehaviour
         sequence.OnComplete(() =>
         {
             onComplete?.Invoke();
-            StartIdle();
+            IdleTransition(StartIdle);
         });
     }
+
     public void MoveOutPassenger(Action onComplete)
     {
-        StopIdle();
-        passengerRectTrans.DOKill();
+        IdleTransition(() =>
+        {
+            StopIdle();
+            passengerRectTrans.DOKill();
 
-        DG.Tweening.Sequence sequence = DOTween.Sequence();
+            DG.Tweening.Sequence sequence = DOTween.Sequence();
 
-        sequence.Append(passengerRectTrans.DOAnchorPosX(outPos, walkDuration).SetEase(Ease.InCubic));
-        sequence.Join(passengerRectTrans.DOAnchorPosY(initialPosY + walkMaxY, walkDuration / jumps)
-            .SetLoops(jumps, LoopType.Yoyo).SetEase(Ease.InOutSine));
+            sequence.Append(passengerRectTrans.DOAnchorPosX(outPos, walkDuration).SetEase(Ease.InCubic));
+            sequence.Join(passengerRectTrans.DOAnchorPosY(initialPosY + walkMaxY, walkDuration / jumps)
+                .SetLoops(jumps, LoopType.Yoyo).SetEase(Ease.InOutSine));
 
-        sequence.OnComplete(() => onComplete?.Invoke());
+            sequence.OnComplete(() => onComplete?.Invoke());
+        });
     }
 
     public void MoveAvoidPassenger(Action onComplete)
     {
-        StopIdle();
-        passengerRectTrans.DOKill();
-
-        DG.Tweening.Sequence sequence = DOTween.Sequence();
-
-        sequence.Append(passengerRectTrans.DOAnchorPosX(inPos, walkDuration).SetEase(Ease.InCubic));
-        sequence.Join(passengerRectTrans.DOAnchorPosY(initialPosY + walkMaxY, walkDuration / jumps)
-            .SetLoops(jumps, LoopType.Yoyo).SetEase(Ease.InOutSine));
-
-        sequence.OnComplete(() =>
+        IdleTransition(() =>
         {
-            onComplete?.Invoke();
+            StopIdle();
+            passengerRectTrans.DOKill();
+
+            DG.Tweening.Sequence sequence = DOTween.Sequence();
+
+            sequence.Append(passengerRectTrans.DOAnchorPosX(inPos, walkDuration).SetEase(Ease.InCubic));
+            sequence.Join(passengerRectTrans.DOAnchorPosY(initialPosY + walkMaxY, walkDuration / jumps)
+                .SetLoops(jumps, LoopType.Yoyo).SetEase(Ease.InOutSine));
+
+            sequence.OnComplete(() =>
+            {
+                onComplete?.Invoke();
+            });
         });
     }
 }

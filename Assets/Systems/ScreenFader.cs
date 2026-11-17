@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Threading.Tasks;
 using Unity.Mathematics;
 using UnityEngine;
@@ -38,5 +40,36 @@ public class ScreenFader : MonoBehaviour
     {
         canvasGroup.alpha = 1;
         await Fade(0, f);
+    }
+    private async Task Wait(float duration)
+    {
+        float t = 0;
+
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            await Task.Yield();
+        }
+    }
+
+    public async Task FadeTransition(
+       float fadeOutDuration,
+       float fadeInDuration,
+       float blackScreenTime,
+       params Func<Task>[] actions)
+    {
+        await FadeOut(fadeOutDuration);
+
+        await Wait(blackScreenTime / 2);
+
+        foreach (Func<Task> action in actions)
+        {
+            if (action != null)
+                await action();
+        }
+
+        await Wait(blackScreenTime / 2);
+
+        await FadeIn(fadeInDuration);
     }
 }

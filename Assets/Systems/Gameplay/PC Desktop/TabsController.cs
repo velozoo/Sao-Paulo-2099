@@ -1,10 +1,8 @@
+
 using DG.Tweening;
 using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class TabsController : MonoBehaviour
 {
@@ -12,7 +10,6 @@ public class TabsController : MonoBehaviour
     [SerializeField] private GameObject buttonDocuments;
     [SerializeField] private GameObject buttonLarpGram;
     [SerializeField] private GameObject buttonEasyPass;
-
 
     [Header("Animation Config")]
     [SerializeField] private float openTabTime;
@@ -32,7 +29,7 @@ public class TabsController : MonoBehaviour
     {
         Instance = this;
 
-        foreach(var tab in tabsRT)
+        foreach (var tab in tabsRT)
         {
             _tabsPos.Add(tab.anchoredPosition);
         }
@@ -42,14 +39,18 @@ public class TabsController : MonoBehaviour
     {
         RectTransform rtTab = tab.GetComponent<RectTransform>();
 
-        rtTab.anchoredPosition = initialPos.anchoredPosition;
+        Vector3 worldPos = initialPos.TransformPoint(initialPos.rect.center);
+        Vector3 localPos = rtTab.parent.InverseTransformPoint(worldPos);
+
+        rtTab.anchoredPosition = new Vector2(localPos.x, localPos.y);
 
         tab.SetActive(true);
 
-        DG.Tweening.Sequence sequence = DOTween.Sequence();
+        Sequence sequence = DOTween.Sequence();
 
-        sequence.Append(tab.transform.DOScale(new Vector3(1, 1, 1), openTabTime).SetEase(Ease.InOutSine));
+        sequence.Append(tab.transform.DOScale(Vector3.one, openTabTime).SetEase(Ease.InOutSine));
         sequence.Join(rtTab.DOAnchorPos(finalPos, openTabTime).SetEase(Ease.InOutSine));
+
         SoundFXManager.Instance.PlaySoundFXClip(openClip, volume);
 
         sequence.OnComplete(() =>
@@ -62,10 +63,16 @@ public class TabsController : MonoBehaviour
     {
         RectTransform rtTab = tab.GetComponent<RectTransform>();
 
-        DG.Tweening.Sequence sequence = DOTween.Sequence();
+        Vector3 worldPos = finalPos.TransformPoint(finalPos.rect.center);
+        Vector3 localPos = rtTab.parent.InverseTransformPoint(worldPos);
 
-        sequence.Append(tab.transform.DOScale(new Vector3(0, 0, 0), openTabTime).SetEase(Ease.InOutSine));
-        sequence.Join(rtTab.DOAnchorPos(finalPos.anchoredPosition, openTabTime).SetEase(Ease.InOutSine));
+        Vector2 targetPos = new Vector2(localPos.x, localPos.y);
+
+        Sequence sequence = DOTween.Sequence();
+
+        sequence.Append(tab.transform.DOScale(Vector3.zero, openTabTime).SetEase(Ease.InOutSine));
+        sequence.Join(rtTab.DOAnchorPos(targetPos, openTabTime).SetEase(Ease.InOutSine));
+
         SoundFXManager.Instance.PlaySoundFXClip(closeClip, volume);
 
         sequence.OnComplete(() =>
@@ -81,6 +88,6 @@ public class TabsController : MonoBehaviour
         for (int i = 0; i < _tabsPos.Count; i++)
         {
             tabsRT[i].anchoredPosition = _tabsPos[i];
-        } 
+        }
     }
 }

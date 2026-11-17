@@ -1,4 +1,4 @@
-
+using System.Threading.Tasks;
 using System.Collections.Generic;
 using TMPEffects.Components;
 using TMPro;
@@ -39,7 +39,7 @@ public class DiaryManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public async void ToggleDiary()
+    public void ToggleDiary()
     {
         _currentDay = GameManager.Instance._currentDay - 1;
 
@@ -59,8 +59,6 @@ public class DiaryManager : MonoBehaviour
         LoadEntry(_availableDiaryData.Count - 1);
 
         diaryScreen.SetActive(true);
-
-        await ScreenFader.Instance.FadeIn(fadeInDuration);
     }
 
     private void LoadEntry(int entryIndex)
