@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e749cf0da5460a24b92b7b170af28432, type: 3}
   m_Name: LG Bianca Dias
   m_EditorClassIdentifier: Assembly-CSharp::LarpGramData
-  profilePicture: {fileID: 3716967591569974123, guid: e404a1447e0185d4ab49837271a75f7b, type: 3}
+  profilePicture: {fileID: 21300000, guid: e70ae833bf13e614893a0cb4f0f2ac75, type: 3}
   nickname: bi_dias
   numberPosts: 0
   followers: 5.311

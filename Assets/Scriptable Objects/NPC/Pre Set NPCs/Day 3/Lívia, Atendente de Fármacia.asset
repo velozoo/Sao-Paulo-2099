@@ -21,4 +21,12 @@ MonoBehaviour:
   day: 31
   month: 12
   year: 2063
-  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  entryLine: "Bom dia! Sa\xED correndo da farm\xE1cia, vim direto pra c\xE1."
+  avoidLine: "\xC9 um bottonzinho no canto da camiseta, pelo amor de Deus! Eu nem
+    participo de nada. S\xF3 acho aesthetic."
+  passLine: Obrigada, bom dia.
+  voice:
+  - {fileID: 8300000, guid: 27d3119d39dbc094dbc071724afde1d1, type: 3}
+  sprite: {fileID: 21300000, guid: 7858329a140d29047b79d7ff050d5c3b, type: 3}
+  larpGramData: {fileID: 0}
+  easyPassData: {fileID: 0}

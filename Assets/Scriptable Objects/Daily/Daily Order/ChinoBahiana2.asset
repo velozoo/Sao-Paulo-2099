@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89002ee8e2040d4faab7103d19dc73f, type: 3}
+  m_Name: ChinoBahiana2
+  m_EditorClassIdentifier: Assembly-CSharp::SuperiorInstructionData
+  emailFrom: Palavras de Chino Bahia <b><u>oxepequim@china.ba</b></u>
+  emailFor: Inspetor
+  emailSubject: Guerra Chino-Bahiana (2-3)
+  emailContent: "Em 25 de mar\xE7o de 2066, onze anos depois da proclama\xE7\xE3o,
+    o presidente reeleito Cl\xE9ber Wu declarou a retomada do territ\xF3rio nordestino.
+    A data, coincidente com a da proclama\xE7\xE3o, n\xE3o foi acidental e carregava
+    um recado. Wu era baiano nativo e guardava um ressentimento profundo pela perda
+    da terra onde nascera. Mesmo assim, s\xF3 agiu no segundo mandato, quando j\xE1
+    n\xE3o dependia de nenhuma elei\xE7\xE3o e podia assumir sozinho o custo pol\xEDtico
+    de uma guerra.\r\n\r\nO conflito arrastou-se por anos e consumiu recursos de
+    ambos os lados. Houve ainda um fator externo de peso. Como registrou um analista
+    da \xE9poca, \u201Cos Estados Unidos, j\xE1 em franca decad\xEAncia, apoiaram
+    o Brasil nessa guerra, e o desgaste desse envolvimento figurou entre as causas
+    de seu desmantelamento\u201D."

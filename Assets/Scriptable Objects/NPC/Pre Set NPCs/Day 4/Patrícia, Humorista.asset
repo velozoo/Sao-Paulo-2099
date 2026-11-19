@@ -21,5 +21,13 @@ MonoBehaviour:
   day: 29
   month: 4
   year: 2051
-  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  entryLine: "Boa tarde, inspetor! Prometo que hoje eu n\xE3o t\xF4 com nenhuma piada
+    pronta."
+  avoidLine: "Era uma piada! Eu estava zoando o candidato, n\xE3o o contr\xE1rio.
+    Voc\xEAs perderam o senso de humor?"
+  passLine: Ah, bom, o humor sobreviveu hoje. Obrigada.
+  voice:
+  - {fileID: 8300000, guid: 27d3119d39dbc094dbc071724afde1d1, type: 3}
+  sprite: {fileID: 21300000, guid: 37ebb69b991970b4fa18923fc433bea9, type: 3}
   larpGramData: {fileID: 11400000, guid: a830ff930fe499f4cafd904f463e4a24, type: 2}
+  easyPassData: {fileID: 0}

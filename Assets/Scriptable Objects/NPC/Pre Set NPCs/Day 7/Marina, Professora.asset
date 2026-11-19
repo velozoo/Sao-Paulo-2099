@@ -21,5 +21,9 @@ MonoBehaviour:
   day: 9
   month: 9
   year: 2045
-  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  entryLine: "Boa tarde! T\xF4 voltando da escola, foi um dia longo."
+  avoidLine: "Est\xE1 tudo certo com meus dados! Por que est\xE1 me barrando?"
+  passLine: Obrigada. Boa tarde.
+  sprite: {fileID: 21300000, guid: d5ac340ef65cd4e4e8aea6dfad295d7f, type: 3}
   larpGramData: {fileID: 11400000, guid: 504c652122329d1449414716abc7ff01, type: 2}
+  easyPassData: {fileID: 11400000, guid: 8c771dd462637cd46a995110eed1a901, type: 2}

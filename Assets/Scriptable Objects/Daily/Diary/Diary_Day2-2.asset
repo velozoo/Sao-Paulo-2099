@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b86d91ff5b11341b785e89d40d1e35, type: 3}
+  m_Name: Diary_Day2-2
+  m_EditorClassIdentifier: Assembly-CSharp::DiaryData
+  dayTitle: 
+  pageContent: "Um aposentado tinha dados divergentes no RG e na carteira, e o sistema
+    n\xE3o soube dizer quem ele era. S\xF3 queria chegar ao hospital. Fiquei olhando
+    o homem se afastar devagar, sem saber se o culpado era ele, o sistema ou eu.
+    Conclu\xED que ningu\xE9m precisa ser culpado para o resultado ser o mesmo.\r\n\r\nNo
+    fim do turno, pegaram um sujeito com adornos do Sol Vermelho que pulou a catraca.
+    Os guardas da linha arco-\xEDris o levaram diante de todos. Ningu\xE9m olhou
+    por muito tempo, e eu tamb\xE9m n\xE3o. Anotei no relat\xF3rio que n\xE3o houve
+    incidentes comigo. Isso \xE9 verdade."

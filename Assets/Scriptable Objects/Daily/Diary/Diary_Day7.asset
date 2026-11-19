@@ -13,19 +13,10 @@ MonoBehaviour:
   m_Name: Diary_Day7
   m_EditorClassIdentifier: Assembly-CSharp::DiaryData
   dayTitle: Dia 25 de setembro de 2089
-  paragraphs:
-  - "\xDAltimo dia. Tudo funcionou, o que me parece o pior resultado poss\xEDvel."
-  - "Passou uma professora que voltava da escola, depois um ambulante que falava
-    numa l\xEDngua de g\xEDrias que n\xE3o entendi por inteiro, e uma auxiliar de
-    enfermagem que s\xF3 queria descansar. Um supervisor me avisou que manifestantes
-    tomavam as esta\xE7\xF5es pela for\xE7a e que a nossa seria fechada. Quem estivesse
-    dentro seria o \xFAltimo passageiro. Os outros, bem. Ele deixou a frase sem terminar,
+  pageContent: "\xDAltimo dia. Tudo funcionou, o que me parece o pior resultado poss\xEDvel.\r\n\r\nPassou
+    uma professora que voltava da escola, depois um ambulante que falava numa l\xEDngua
+    de g\xEDrias que n\xE3o entendi por inteiro, e uma auxiliar de enfermagem que
+    s\xF3 queria descansar. Um supervisor me avisou que manifestantes tomavam as
+    esta\xE7\xF5es pela for\xE7a e que a nossa seria fechada. Quem estivesse dentro
+    seria o \xFAltimo passageiro. Os outros, bem. Ele deixou a frase sem terminar,
     e eu a terminei sozinho, sem querer."
-  - "A \xFAltima foi dona Ivone, trabalhadora dom\xE9stica. Cadastro limpo, perfil
-    limpo, rota correta. S\xF3 faltava o implante, que n\xE3o cabia no or\xE7amento
-    dela. Falou do grupo que esperava l\xE1 fora, e a \xFAnica pergunta que ficou
-    foi onde ela ficaria. Qualquer que tenha sido meu gesto, a frase pronta estava
-    l\xE1, e \xE9 a \xFAnica que realmente aprendi nesta semana."
-  - "Segui o procedimento at\xE9 o fim e n\xE3o consigo dizer se isso tem alguma
-    rela\xE7\xE3o com o que \xE9 justo. Talvez nunca tenha tido."
-  - "Amanh\xE3 n\xE3o sei se volto \xE0 cabine. O pior \xE9 que sei que voltarei."

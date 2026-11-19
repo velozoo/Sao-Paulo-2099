@@ -21,5 +21,11 @@ MonoBehaviour:
   day: 16
   month: 1
   year: 2063
-  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  entryLine: 'Salve, meu nobre! W dia pra todo mundo. '
+  avoidLine: "P\xF4, mano, t\xF4 s\xF3 no corre, full empreendedorismo sigma. S\xF3
+    preciso vender umas paradas na outra esta\xE7\xE3o, t\xE1 ligado? Que atitude
+    cringe \xE9 essa? Literalmente NPC behavior. Seja based, meu patr\xE3o. Brutal..."
+  passLine: W guardinha.
+  sprite: {fileID: 21300000, guid: edd00e636b5832c428c26dfe24a3fd18, type: 3}
   larpGramData: {fileID: 11400000, guid: 29cad94b11a2d1044bc5b22af1369978, type: 2}
+  easyPassData: {fileID: 11400000, guid: 0ece0ea70ab2c15478f96130547a1245, type: 2}

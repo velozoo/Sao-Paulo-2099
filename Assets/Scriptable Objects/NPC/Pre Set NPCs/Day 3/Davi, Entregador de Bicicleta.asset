@@ -21,4 +21,12 @@ MonoBehaviour:
   day: 8
   month: 1
   year: 2065
-  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  entryLine: "E a\xED, parceiro, beleza? T\xF4 no corre hoje."
+  avoidLine: "Eu me cadastrei por causa do desconto no lanche, s\xF3 isso! Agora
+    vou ficar sem trabalho?"
+  passLine: Ufa. Valeu, parceiro.
+  voice:
+  - {fileID: 8300000, guid: 7b6db24f7dda46340823d027257a577c, type: 3}
+  sprite: {fileID: 21300000, guid: f8126949f207c2343bbfa9c9559a690f, type: 3}
+  larpGramData: {fileID: 0}
+  easyPassData: {fileID: 0}

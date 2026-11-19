@@ -21,5 +21,15 @@ MonoBehaviour:
   day: 6
   month: 6
   year: 2056
-  sprite: {fileID: 7845886632948610683, guid: f37b341f9d9f31f41a3c0703da1455ba, type: 3}
+  entryLine: "Oxente, bom dia, meu rei! N\u01D0 h\u01CEo! Tudo em paz?"
+  avoidLine: "Oxente! Foi minha mochila, n\xE9, l\u01CEob\u01CEn? \xC9 s\xF3 um adesivo,
+    meu rei! Ganhei de um p\xE9ngy\u01D2u, t\xE1 entendendo? M\xE9i w\xE8nt\xED,
+    cabra t\u01CEoy\xE0n da molestia!"
+  passLine: "Oxente! Foi por isso, n\xE9, l\u01CEob\u01CEn? \xC9 s\xF3 um adesivo,
+    meu rei! Ganhei de um p\xE9ngy\u01D2u, t\xE1 entendendo? M\xE9i w\xE8nt\xED,
+    cabra t\u01CEoy\xE0n da molestia!"
+  voice:
+  - {fileID: 8300000, guid: 7b6db24f7dda46340823d027257a577c, type: 3}
+  sprite: {fileID: 21300000, guid: f37b341f9d9f31f41a3c0703da1455ba, type: 3}
   larpGramData: {fileID: 11400000, guid: f755e62a6207660468ea37927df39b14, type: 2}
+  easyPassData: {fileID: 0}

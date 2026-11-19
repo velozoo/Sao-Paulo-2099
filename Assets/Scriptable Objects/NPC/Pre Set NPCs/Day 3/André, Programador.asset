@@ -21,4 +21,12 @@ MonoBehaviour:
   day: 17
   month: 5
   year: 2048
-  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  entryLine: "Boa tarde. Pode checar tudo, t\xE1 em ordem."
+  avoidLine: "Est\xE1 tudo regular aqui. Vou reclamar disso com os seus supriores,
+    viu?"
+  passLine: Tudo certo, obrigado. Boa tarde.
+  voice:
+  - {fileID: 8300000, guid: 7b6db24f7dda46340823d027257a577c, type: 3}
+  sprite: {fileID: 21300000, guid: 6464fff0b5736ce4d8c25e2fd2fd6c62, type: 3}
+  larpGramData: {fileID: 0}
+  easyPassData: {fileID: 0}

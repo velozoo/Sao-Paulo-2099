@@ -29,7 +29,6 @@ public class HandlerToSound : MonoBehaviour, IPointerClickHandler, IPointerDownH
         PlayArraySound(clipMouseEnter);
     }
 
-
     private void PlayArraySound(AudioClip[] clips)
     {
         if (spawnPos == null)

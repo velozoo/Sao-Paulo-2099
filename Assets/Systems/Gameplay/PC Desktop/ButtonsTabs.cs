@@ -6,7 +6,6 @@ public class ButtonsTabs : MonoBehaviour
     [SerializeField] private GameObject tab;
     [SerializeField] private RectTransform initialPos;
 
-
     private Vector2 _finalPos;
     private RectTransform _rtTab;
 

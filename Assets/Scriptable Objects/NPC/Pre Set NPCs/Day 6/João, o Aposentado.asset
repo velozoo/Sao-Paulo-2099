@@ -21,5 +21,15 @@ MonoBehaviour:
   day: 20
   month: 7
   year: 2007
-  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  entryLine: "Bu\xE3\xE3\xE3\xE2... bom dia, pai..."
+  avoidLine: "b\xE3aaaaa!."
+  passLine: "Bu\xE3\xE3\xE3\xE2, v\xE9inho."
+  voice:
+  - {fileID: 8300000, guid: d7c1cdd0c3cff8048a2ccf249405196a, type: 3}
+  - {fileID: 8300000, guid: bb0a7d303022da14fb6556ac0f2232b0, type: 3}
+  - {fileID: 8300000, guid: 609ab340ccda23042b48edd9f6ef3573, type: 3}
+  - {fileID: 8300000, guid: 49f08c2677c670e41bb0a266f36c2545, type: 3}
+  - {fileID: 8300000, guid: 9f631e30d756532428759eada13c9cab, type: 3}
+  sprite: {fileID: 21300000, guid: b0ae5af1baeb1fb438aa9aced54813da, type: 3}
   larpGramData: {fileID: 11400000, guid: fc729e292ab9dc64ab11594e839694f4, type: 2}
+  easyPassData: {fileID: 11400000, guid: ad505aed6010e6c44a6f3c992d9fcf9a, type: 2}

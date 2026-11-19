@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89002ee8e2040d4faab7103d19dc73f, type: 3}
+  m_Name: InstructionData_Day4
+  m_EditorClassIdentifier: Assembly-CSharp::SuperiorInstructionData
+  emailFrom: "Coordena\xE7\xE3o de Fiscaliza\xE7\xE3o <b><u>fiscalizacao@metro.sp</u></b>"
+  emailFor: Inspetor
+  emailSubject: "Decreto de Neutralidade P\xFAblica"
+  emailContent: "Prezado Inspetor,\r\n\r\nO terminal do LarpGram j\xE1 est\xE1 liberado
+    na sua cabine. Para passageiros suspeitos, abra o perfil e consulte as publica\xE7\xF5es.\r\n\r\nQualquer
+    men\xE7\xE3o ao Sol Vermelho \xE9 motivo para <b>negar a entrada</b>, seja de
+    apoio, cr\xEDtica, den\xFAncia ou s\xE1tira. Lembre-se: voc\xEA aplica uma norma
+    do Metr\xF4, n\xE3o julga o cidad\xE3o.\r\n\r\nAtenciosamente,\r\n\r\nCoordena\xE7\xE3o
+    de Fiscaliza\xE7\xE3o"

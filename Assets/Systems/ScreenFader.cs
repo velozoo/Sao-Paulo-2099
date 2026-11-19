@@ -72,4 +72,25 @@ public class ScreenFader : MonoBehaviour
 
         await FadeIn(fadeInDuration);
     }
+
+    public async Task ReverseFadeTransition(
+       float fadeOutDuration,
+       float fadeInDuration,
+       float blackScreenTime,
+       params Func<Task>[] actions)
+    {
+        await FadeIn(fadeInDuration);
+
+        await Wait(blackScreenTime / 2);
+
+        foreach (Func<Task> action in actions)
+        {
+            if (action != null)
+                await action();
+        }
+
+        await Wait(blackScreenTime / 2);
+
+        await FadeOut(fadeOutDuration);
+    }
 }

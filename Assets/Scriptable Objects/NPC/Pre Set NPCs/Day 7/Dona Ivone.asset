@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f1a6c629786d046932ea51af5b3a2e, type: 3}
+  m_Name: Dona Ivone
+  m_EditorClassIdentifier: Assembly-CSharp::GenericPassengerData
+  name: Ivone
+  lastName: Torvald
+  job: Aposentado
+  destinyStation: Tucuruvi
+  isAllied: 0
+  problem: 7
+  day: 6
+  month: 7
+  year: 2005
+  entryLine: "Boa tarde, meu filho. Que Deus te aben\xE7oe. Eu s\xF3 preciso ir pra
+    casa."
+  avoidLine: "Eu n\xE3o tenho como pagar essa assinatura, mo\xE7o. Tem um grupo l\xE1
+    fora, onde eu vou?"
+  passLine: "Que Deus te aben\xE7oe, meu filho. Obrigada."
+  sprite: {fileID: 21300000, guid: f97fb35a647725449bc4031a6ece72d8, type: 3}
+  larpGramData: {fileID: 11400000, guid: 51054f6f3705ca245bcaadcdd9efa60e, type: 2}
+  easyPassData: {fileID: 11400000, guid: 1fdd110a99091c9448961311495d99d5, type: 2}

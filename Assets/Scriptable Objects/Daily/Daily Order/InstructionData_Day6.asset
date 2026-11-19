@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89002ee8e2040d4faab7103d19dc73f, type: 3}
+  m_Name: InstructionData_Day6
+  m_EditorClassIdentifier: Assembly-CSharp::SuperiorInstructionData
+  emailFrom: "Coordena\xE7\xE3o de Fiscaliza\xE7\xE3o <b><u>fiscalizacao@metro.sp</u></b>"
+  emailFor: Inspetor
+  emailSubject: "Obrigatoriedade do Passa F\xE1cil"
+  emailContent: "Prezado Inspetor,\r\n\r\nO implante Passa F\xE1cil agora \xE9 obrigat\xF3rio.
+    Verifique seu status no terminal:\r\n\r\n- <b>Ativo:</b> implante presente e
+    assinatura vigente.\r\n- <b>Inativo:</b>sem implante ou assinatura vencida. <b>Entrada
+    negada.</b>\r\n\r\nO Passa F\xE1cil n\xE3o substitui as demais verifica\xE7\xF5es.
+    Ele \xE9 uma condi\xE7\xE3o a mais.\r\n\r\nAtenciosamente,\r\n\r\nCoordena\xE7\xE3o
+    de Fiscaliza\xE7\xE3o"

@@ -9,7 +9,6 @@ public class TabsController : MonoBehaviour
     [Header("Buttons")]
     [SerializeField] private GameObject buttonDocuments;
     [SerializeField] private GameObject buttonLarpGram;
-    [SerializeField] private GameObject buttonEasyPass;
 
     [Header("Animation Config")]
     [SerializeField] private float openTabTime;
@@ -27,7 +26,10 @@ public class TabsController : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
 
         foreach (var tab in tabsRT)
         {

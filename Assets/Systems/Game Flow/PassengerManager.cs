@@ -2,18 +2,21 @@ using UnityEngine.UI;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class PassengerManager : MonoBehaviour
 {
-    [SerializeField] private Button callNextButton;
+    [SerializeField] private Button clockOutButton;
 
     [Header("References")]
     [SerializeField] private PassengerGenerator passengerGenerator;
 
     [Header("NPCs per day")]
     [SerializeField] private List<PassengerDay> days;
+    [SerializeField] private float waitBetweenPassenger;
+    [SerializeField] private float minWait;
 
-    [HideInInspector] public GenericPassengerData _currentPassenger;
+    public GenericPassengerData _currentPassenger;
     [HideInInspector] public bool _passengerIsTransitioning;
 
     private List<PassengerDay> _days;
@@ -30,19 +33,12 @@ public class PassengerManager : MonoBehaviour
 
     public static PassengerManager Instance;
 
-
-
     private void Awake()
     {
         if (Instance == null)
             Instance = this;
         else
             Destroy(gameObject);
-    }
-
-    private void Start()
-    {
-        ToggleCallNext(false);
     }
 
     public void StartPassenger(Action onComplete)
@@ -89,12 +85,13 @@ public class PassengerManager : MonoBehaviour
             return;
         }
 
-
         _hasActivePassenger = false;
         _passengerIsTransitioning = false;
         _passengersFinished = false;
 
-        ToggleCallNext(HasPassengersRemaining());
+        print("toggle1");
+
+        ToggleClockOut(true);
     }
 
     private bool HasPassengersRemaining()
@@ -113,7 +110,7 @@ public class PassengerManager : MonoBehaviour
         }
 
         _passengerIsTransitioning = true;
-        ToggleCallNext(false);
+        //ToggleCallNext(false);
 
         int passengerIndex = UnityEngine.Random.Range(
             0,
@@ -130,6 +127,7 @@ public class PassengerManager : MonoBehaviour
         {
             _passengerIsTransitioning = false;
             _hasActivePassenger = true;
+            print("pront po ir");
         });
     }
 
@@ -152,7 +150,10 @@ public class PassengerManager : MonoBehaviour
         _passengerIsTransitioning = false;
 
         if (HasPassengersRemaining())
-            ToggleCallNext(true);
+        {
+            StartCoroutine(PassengersCoolDown());
+            //ToggleCallNext(true);
+        }
         else
             FinishPassengers();
     }
@@ -166,7 +167,7 @@ public class PassengerManager : MonoBehaviour
         _passengerIsTransitioning = false;
         _hasActivePassenger = false;
 
-        ToggleCallNext(false);
+        //ToggleCallNext(false);
 
         _onPassengersFinished?.Invoke();
         _onPassengersFinished = null;
@@ -179,11 +180,20 @@ public class PassengerManager : MonoBehaviour
             _passengersFinished)
             return;
 
+        ToggleClockOut(false);
+
         SetPassenger();
     }
 
-    public void ToggleCallNext(bool canCall)
+    private IEnumerator PassengersCoolDown()
     {
-        callNextButton.interactable = canCall;
+        yield return new WaitForSeconds(UnityEngine.Random.Range(minWait, waitBetweenPassenger));
+        CallNextPassenger();
     }
+
+    public void ToggleClockOut(bool b)
+    {
+        clockOutButton.interactable = b;
+    }
+
 }

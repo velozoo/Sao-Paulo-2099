@@ -21,5 +21,11 @@ MonoBehaviour:
   day: 5
   month: 2
   year: 2059
-  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  entryLine: "Boa noite! T\xF4 indo pro plant\xE3o, o turno j\xE1 come\xE7ou."
+  avoidLine: "Eu t\xF4 atrasado pro plant\xE3o, tem gente esperando por mim no hospital!"
+  passLine: Obrigado. Boa noite, tenha um bom turno.
+  voice:
+  - {fileID: 8300000, guid: 7b6db24f7dda46340823d027257a577c, type: 3}
+  sprite: {fileID: 21300000, guid: 1f2823cf7ee0e7741b2cef48bca021cd, type: 3}
   larpGramData: {fileID: 11400000, guid: f3eba061e903edc409f15b8c68e7332d, type: 2}
+  easyPassData: {fileID: 0}

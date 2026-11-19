@@ -20,6 +20,7 @@ public class DayManager : MonoBehaviour
     [SerializeField] private Button clockOutButton;
     [SerializeField] private float fadeInDuration;
     [SerializeField] private float fadeOutDuration;
+    [SerializeField] private float blackScreenDuration;
 
     [Header("Debug")]
     [SerializeField] private bool doNews;
@@ -101,10 +102,15 @@ public class DayManager : MonoBehaviour
 
     public async void ClockOut()
     {
+        if (!_passengersFinished)
+            return;
+
+        clockOutButton.interactable = false;
+
         await ScreenFader.Instance.FadeTransition(
             fadeOutDuration,
             fadeInDuration,
-            3f,
+            blackScreenDuration,
 
             () =>
             {

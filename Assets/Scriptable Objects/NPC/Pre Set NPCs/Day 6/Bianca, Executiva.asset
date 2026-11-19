@@ -21,5 +21,12 @@ MonoBehaviour:
   day: 3
   month: 4
   year: 2045
-  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  entryLine: "Bom dia. Tenho uma reuni\xE3o \xE0s nove, ent\xE3o vamos agilizar."
+  avoidLine: "Minha assinatura est\xE1 em dia! minha diarista paga isso pra mim todo
+    m\xEAs, isso \xE9 um absurdo."
+  passLine: Obrigada. Bom dia.
+  voice:
+  - {fileID: 8300000, guid: 27d3119d39dbc094dbc071724afde1d1, type: 3}
+  sprite: {fileID: 21300000, guid: 6a5fa6495f65014448056c0ab3ff2dde, type: 3}
   larpGramData: {fileID: 11400000, guid: add7216ebef8e0f479dbea3f447ebd74, type: 2}
+  easyPassData: {fileID: 11400000, guid: ef49d809a6937d745b0afbf0de8b3d84, type: 2}

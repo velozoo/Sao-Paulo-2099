@@ -21,4 +21,12 @@ MonoBehaviour:
   day: 7
   month: 10
   year: 2057
-  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  entryLine: Boa tarde. Documentos aqui, pode conferir.
+  avoidLine: "Meu cadastro est\xE1 limpo, olha o sistema. Vou me atrasar pra reuni\xE3o
+    por nada."
+  passLine: Boa tarde. Obrigado.
+  voice:
+  - {fileID: 8300000, guid: 7b6db24f7dda46340823d027257a577c, type: 3}
+  sprite: {fileID: 21300000, guid: 0c489d47cf45daa4e914a84a6db2c2b1, type: 3}
+  larpGramData: {fileID: 0}
+  easyPassData: {fileID: 0}

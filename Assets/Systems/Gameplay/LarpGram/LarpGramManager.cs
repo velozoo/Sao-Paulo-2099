@@ -29,7 +29,6 @@ public class LarpGramManager : MonoBehaviour
 
     public void UpdateLarp(GenericPassengerData passenger)
     {
-
         LarpGramData passengerData = passenger.larpGramData;
 
         string fullName = passenger.name + " " + passenger.lastName;

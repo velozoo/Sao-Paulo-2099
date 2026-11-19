@@ -13,19 +13,9 @@ MonoBehaviour:
   m_Name: Diary_Day3
   m_EditorClassIdentifier: Assembly-CSharp::DiaryData
   dayTitle: Dia 21 de setembro de 2089
-  paragraphs:
-  - "O procedimento j\xE1 se faz sozinho. Abro, leio, decido, fecho. Percebi hoje
-    que tenho um ritmo, e achei isso pior do que qualquer outra coisa que poderia
-    ter percebido."
-  - "Uma atendente de farm\xE1cia usava um bottonzinho do Sol Vermelho no canto da
-    camiseta e dizia que o achava bonito, que era est\xE9tica. N\xE3o duvido. Pensei
-    que talvez a est\xE9tica seja justamente a maneira como as coisas come\xE7am
-    a significar algo."
-  - "Uma mulher descreveu uma rota que passava por uma esta\xE7\xE3o inacess\xEDvel.
-    Disse que fazia o trajeto toda semana e que ningu\xE9m a avisara da mudan\xE7a.
-    Era poss\xEDvel, j\xE1 que ningu\xE9m avisa ningu\xE9m de nada aqui dentro. Mas
-    a regra me pede desconfian\xE7a, e o que se pede da desconfian\xE7a \xE9 que
-    ela exista, n\xE3o que seja justa."
-  - "O comunicado do Metr\xF4 de manh\xE3 dizia para evitar decis\xF5es baseadas
-    em simpatia pessoal. Reli a frase tr\xEAs vezes. Acho que \xE9 a \xFAnica instru\xE7\xE3o
-    do dia que nunca precisei de esfor\xE7o para entender."
+  pageContent: "O procedimento j\xE1 se faz sozinho. Abro, leio, decido, fecho. Percebi
+    hoje que tenho um ritmo, e achei isso pior do que qualquer outra coisa que poderia
+    ter percebido.\r\n\r\nUma atendente de farm\xE1cia usava um bottonzinho do Sol
+    Vermelho no canto da camiseta e dizia que o achava bonito, que era est\xE9tica.
+    N\xE3o duvido. Pensei que talvez a est\xE9tica seja justamente a maneira como
+    as coisas come\xE7am a significar algo."

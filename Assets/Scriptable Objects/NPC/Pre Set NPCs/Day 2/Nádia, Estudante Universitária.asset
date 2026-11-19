@@ -21,4 +21,12 @@ MonoBehaviour:
   day: 9
   month: 9
   year: 2061
-  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  entryLine: "Oi, boa tarde! Tenho prova hoje, pode ser r\xE1pido?"
+  avoidLine: Obrigada. Boa tarde.
+  passLine: "Eu s\xF3 me cadastrei numa lista, n\xE3o fiz nada! Vou perder a prova
+    por causa disso?"
+  voice:
+  - {fileID: 8300000, guid: 27d3119d39dbc094dbc071724afde1d1, type: 3}
+  sprite: {fileID: 21300000, guid: c5fabb4ab0d2e8247a6eb83edf1f8b19, type: 3}
+  larpGramData: {fileID: 0}
+  easyPassData: {fileID: 0}

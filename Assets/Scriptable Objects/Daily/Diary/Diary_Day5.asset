@@ -13,17 +13,10 @@ MonoBehaviour:
   m_Name: Diary_Day5
   m_EditorClassIdentifier: Assembly-CSharp::DiaryData
   dayTitle: Dia 23 de setembro de 2089
-  paragraphs:
-  - "Um cozinheiro postou que viu uma manifesta\xE7\xE3o passar. S\xF3 isso. Fiquei
-    me perguntando se agora nem olhar se pode, e a pergunta ficou sem resposta, porque
-    a regra n\xE3o \xE9 feita para perguntas."
-  - "Hoje apareceu um estudante de origem chino-bahiana, falando as duas l\xEDnguas
-    misturadas e com um adesivo na mochila. Era cordial e quase divertido, e me chamou
-    de rei. Pensei nos livros sobre o territ\xF3rio e em como aquela mistura \xE9
-    a \xFAnica coisa verdadeira que a hist\xF3ria produziu por ali."
-  - "Uma cuidadora de sessenta e um anos criticara a repress\xE3o numa publica\xE7\xE3o,
-    e havia gente que dependia dela. Eu tamb\xE9m dependo de algo e n\xE3o digo a
-    ningu\xE9m."
-  - "Hoje as tr\xEAs verifica\xE7\xF5es se completaram, e o chefe comentou que eu
-    estava r\xE1pido. Tomei como elogio. Foi a primeira vez em dias que me perguntei
-    se rapidez era o que eu queria ser."
+  pageContent: "Um cozinheiro postou que viu uma manifesta\xE7\xE3o passar. S\xF3
+    isso. Fiquei me perguntando se agora nem olhar se pode, e a pergunta ficou sem
+    resposta, porque a regra n\xE3o \xE9 feita para perguntas.\r\n\r\nHoje apareceu
+    um estudante de origem chino-bahiana, falando as duas l\xEDnguas misturadas e
+    com um adesivo na mochila. Era cordial e quase divertido, e me chamou de rei.
+    Pensei nos livros sobre o territ\xF3rio e em como aquela mistura \xE9 a \xFAnica
+    coisa verdadeira que a hist\xF3ria produziu por ali."

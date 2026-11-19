@@ -31,9 +31,13 @@ public class NewsManager : MonoBehaviour
     [SerializeField] private float finalSetenceDelay;
     [SerializeField] private float finalTextDelay;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip talkClip;
+    [SerializeField] private AudioClip[] randomTalkClip;
+    [SerializeField, Range(0f, 1f)] private float volume;
+
     private int _currentTextLineShow;
     private int _currentDay;
-    private Coroutine _pauseCoroutine;
     private Coroutine _nextTextCoroutine;
     private bool _isPaused;
 
@@ -62,6 +66,7 @@ public class NewsManager : MonoBehaviour
         bdsText.text = catchPhrase;
         bdsWriter.StartWriter();
     }
+
     public void PlayEndPhrase()
     {
         if(_currentTextLineShow >= endPhrase.Length)
@@ -152,5 +157,14 @@ public class NewsManager : MonoBehaviour
         bdsWriter.ResetWriter();
         newsWriter.ResetWriter();
         endWriter.ResetWriter();
+    }
+
+    public void PlayTalkClip()
+    {
+        SoundFXManager.Instance.PlaySoundFXClip(talkClip, volume, transform);
+    }
+    public void PlayRandomTalkClip()
+    {
+        SoundFXManager.Instance.PlayRandomSoundFXClip(randomTalkClip, volume, transform);
     }
 }

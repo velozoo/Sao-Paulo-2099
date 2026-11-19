@@ -13,20 +13,10 @@ MonoBehaviour:
   m_Name: Diary_Day6
   m_EditorClassIdentifier: Assembly-CSharp::DiaryData
   dayTitle: Dia 24 de setembro de 2089
-  paragraphs:
-  - "Chegou a obrigatoriedade do Passa F\xE1cil. Agora n\xE3o basta ser quem se diz
-    ser, \xE9 preciso ter pago para ser. Descobri que a ordem moral do mundo cabe
-    numa mensalidade."
-  - "De manh\xE3, um homem de terno veio \xE0 cabine, bem apresentado, bem tratado,
-    e me disse que o pr\xF3ximo passageiro era um infiltrado e que eu sabia o que
-    fazer. Desejou-me boa sorte. Ningu\xE9m me desejara boa sorte em meses, e aquilo
-    soou menos como um desejo do que como uma amea\xE7a educada."
-  - "O pr\xF3ximo era um velho de oitenta e dois anos que n\xE3o conseguia dizer
-    palavra e emitiu um som que lembrava um balido. Sem implante, sem condi\xE7\xF5es
-    de pagar. Se ele era o infiltrado, o Metr\xF4 est\xE1 sendo derrubado por um
-    homem que mal consegue falar. Se n\xE3o era, n\xE3o sei o que o terno quis de
-    mim."
-  - "Depois veio uma executiva, com a assinatura em dia, paga pela diarista dela.
-    E um t\xE9cnico de manuten\xE7\xE3o, com o implante, mas com um m\xEAs de atraso.
-    Ele precisava chegar para consertar a linha que me emprega. \xC9 um racioc\xEDnio
-    perfeitamente circular. Anotei e fui embora."
+  pageContent: "Chegou a obrigatoriedade do Passa F\xE1cil. Agora n\xE3o basta ser
+    quem se diz ser, \xE9 preciso ter pago para ser. Descobri que a ordem moral do
+    mundo cabe numa mensalidade.\r\n\r\nDe manh\xE3, um homem de terno veio \xE0
+    cabine, bem apresentado, bem tratado, e me disse que o pr\xF3ximo passageiro
+    era um infiltrado e que eu sabia o que fazer. Desejou-me boa sorte. Ningu\xE9m
+    me desejara boa sorte em meses, e aquilo soou menos como um desejo do que como
+    uma amea\xE7a educada."

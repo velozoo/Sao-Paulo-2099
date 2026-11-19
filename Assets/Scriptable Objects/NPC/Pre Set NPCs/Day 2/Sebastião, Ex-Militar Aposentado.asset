@@ -20,5 +20,13 @@ MonoBehaviour:
   problem: 4
   day: 17
   month: 11
-  year: 2050
+  year: 2000
+  entryLine: Bom dia, meu filho. Tenho consulta marcada no hospital.
+  avoidLine: "Gra\xE7as a Deus. Obrigado, meu filho."
+  passLine: "Os dados divergentes n\xE3o s\xE3o culpa minha, o erro \xE9 do sistema!
+    Eu s\xF3 quero ir ao m\xE9dico!"
+  voice:
+  - {fileID: 8300000, guid: 7b6db24f7dda46340823d027257a577c, type: 3}
   sprite: {fileID: 21300000, guid: ae55addf4dc9f8d4fbfaa2c298b5cdc2, type: 3}
+  larpGramData: {fileID: 0}
+  easyPassData: {fileID: 0}

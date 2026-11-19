@@ -15,8 +15,15 @@ public class GenericPassengerData : ScriptableObject
     public int month;
     public int year;
 
+    [Header("Dialogue Lines")]
+    public string entryLine;
+    public string avoidLine;
+    public string passLine;
+    public AudioClip[] voice;
+
     public Sprite sprite;
 
     public LarpGramData larpGramData;
-    
+
+    public EasyPassData easyPassData;
 }

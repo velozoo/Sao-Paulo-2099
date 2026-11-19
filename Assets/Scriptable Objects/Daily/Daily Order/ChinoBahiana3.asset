@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89002ee8e2040d4faab7103d19dc73f, type: 3}
+  m_Name: ChinoBahiana3
+  m_EditorClassIdentifier: Assembly-CSharp::SuperiorInstructionData
+  emailFrom: Palavras de Chino Bahia <b><u>oxepequim@china.ba</b></u>
+  emailFor: Inspetor
+  emailSubject: Um novo tipo de Estado (3-3)
+  emailContent: "Em 2078, o conflito armado entre Brasil e China chegou ao fim com
+    um acordo sem precedentes: uma sociedade estatal. O territ\xF3rio disputado foi
+    dividido entre a 1\xAA pot\xEAncia mundial, a China, e a 3\xAA, o Brasil, e passou
+    a ser um dom\xEDnio de ambos os lados. Nenhum dos dois venceu de fato, e nenhum
+    saiu humilhado.\r\n\r\nAt\xE9 hoje, a forma como as negocia\xE7\xF5es destravaram
+    \xE9 objeto de debate. Uma teoria, muito difundida entre historiadores e jamais
+    confirmada oficialmente, aponta para um diplomata chin\xEAs que mantinha amizade
+    pr\xF3xima com o vice-presidente de Cl\xE9ber e com a esposa dele. Segundo essa
+    vers\xE3o, a rela\xE7\xE3o teria servido de margem para uma articula\xE7\xE3o
+    de espionagem que abriu um canal discreto entre os governos e tornou poss\xEDvel
+    o acordo. Os documentos que poderiam comprov\xE1-la nunca vieram a p\xFAblico.\r\n\r\nSeja
+    qual for a verdade, o Brasil chegou \xE0 mesa de 2078 em posi\xE7\xE3o favor\xE1vel.
+    Ap\xF3s a queda dos Estados Unidos, em 2070, o pa\xEDs assumiu o controle dos
+    estados de Oregon e Washington, o que lhe deu peso territorial e pol\xEDtico
+    para negociar como pot\xEAncia."

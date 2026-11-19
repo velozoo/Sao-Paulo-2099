@@ -21,4 +21,12 @@ MonoBehaviour:
   day: 25
   month: 7
   year: 2043
-  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  entryLine: "Bom dia, mo\xE7o. T\xE1 um frio danado hoje, n\xE9?"
+  avoidLine: "S\xF3 porque meu casaco \xE9 vermelho? Foi o que eu tinha pra esse
+    frio, mo\xE7o."
+  passLine: "Obrigada, mo\xE7o. Tenha um bom dia."
+  voice:
+  - {fileID: 8300000, guid: 27d3119d39dbc094dbc071724afde1d1, type: 3}
+  sprite: {fileID: 21300000, guid: 55f9c6ca477101c409f954a985c2c8d4, type: 3}
+  larpGramData: {fileID: 0}
+  easyPassData: {fileID: 0}

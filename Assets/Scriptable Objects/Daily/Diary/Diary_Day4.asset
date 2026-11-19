@@ -13,19 +13,10 @@ MonoBehaviour:
   m_Name: Diary_Day4
   m_EditorClassIdentifier: Assembly-CSharp::DiaryData
   dayTitle: Dia 22 de setembro de 2089
-  paragraphs:
-  - "Agora leio o que as pessoas escrevem. Entro nas p\xE1ginas delas como quem entra
-    num quarto alheio, s\xF3 que com permiss\xE3o e sem constrangimento, o que \xE9
-    pior."
-  - "A jornalista tinha dezoito anos, e dezoito anos \xE9 pouco para tanta coragem.
-    Publicara uma frase, uma s\xF3, dizendo que o Sol Vermelho n\xE3o desapareceria
-    porque algu\xE9m mandava. Pensei que ela ainda n\xE3o aprendeu o pre\xE7o das
-    frases, e que eu estava ali justamente para cobr\xE1-lo, ou para n\xE3o cobrar,
-    o que daria no mesmo para o meu sono."
-  - "A humorista tinha feito uma piada. Mencionava o movimento para rir de um candidato,
-    e o decreto n\xE3o distingue o riso da ades\xE3o. Senti uma vergonha sem endere\xE7o,
-    que n\xE3o sabia a quem pedir desculpas."
-  - "\xC0 noite, algu\xE9m jogou um coquetel molotov na linha. Ningu\xE9m se feriu,
-    a esta\xE7\xE3o fechou por algumas horas. Esperava sentir al\xEDvio por ter sido
-    longe de mim, e o que senti foi uma esp\xE9cie de cansa\xE7o de causa. Uns queimam
-    o trilho e outros leem os posts, e no meio disso sobramos n\xF3s."
+  pageContent: "Agora leio o que as pessoas escrevem. Entro nas p\xE1ginas delas
+    como quem entra num quarto alheio, s\xF3 que com permiss\xE3o e sem constrangimento,
+    o que \xE9 pior.\r\n\r\nA jornalista tinha dezoito anos, e dezoito anos \xE9
+    pouco para tanta coragem. Publicara uma frase, uma s\xF3, dizendo que o Sol Vermelho
+    n\xE3o desapareceria porque algu\xE9m mandava. Pensei que ela ainda n\xE3o aprendeu
+    o pre\xE7o das frases, e que eu estava ali justamente para cobr\xE1-lo, ou para
+    n\xE3o cobrar, o que daria no mesmo para o meu sono."

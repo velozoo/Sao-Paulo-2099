@@ -4,7 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private List<MechanicUnlock> mechanicUnlocks;
-    public int _currentDay;
+    public int _currentDay; //encapsulamento
 
     public static GameManager Instance;
     private void Awake()

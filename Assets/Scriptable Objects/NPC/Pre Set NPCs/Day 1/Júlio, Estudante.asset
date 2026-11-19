@@ -21,4 +21,12 @@ MonoBehaviour:
   day: 4
   month: 11
   year: 2068
-  sprite: {fileID: 21300000, guid: 4a606f27379adcc4f803c898a943a379, type: 3}
+  entryLine: "Boa tarde! Vou pra faculdade, t\xF4 meio atrasado."
+  avoidLine: "Como assim essa esta\xE7\xE3o n\xE3o existe? Eu t\xF4 indo pra l\xE1
+    todo dia, deve ser erro do mapa de voc\xEAs!"
+  passLine: Beleza, obrigado. Boa tarde.
+  voice:
+  - {fileID: 8300000, guid: 7b6db24f7dda46340823d027257a577c, type: 3}
+  sprite: {fileID: 21300000, guid: 1f2823cf7ee0e7741b2cef48bca021cd, type: 3}
+  larpGramData: {fileID: 0}
+  easyPassData: {fileID: 0}
