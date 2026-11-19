@@ -1,10 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private List<MechanicUnlock> mechanicUnlocks;
-    public int _currentDay; //encapsulamento
+    [SerializeField] private int maxWrong;
+    public int _currentDay;
+    public int _currentWrongGuesses;
+    public int _daySaved;
 
     public static GameManager Instance;
     private void Awake()
@@ -16,6 +20,11 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             Instance = this;
         }
+
+    }
+    private void Start()
+    {
+        SaveDay();
     }
 
     public void UpdateMechanic()
@@ -36,5 +45,17 @@ public class GameManager : MonoBehaviour
     public void AddDay()
     {
         _currentDay++;
+    }
+
+    public void SaveDay()
+    {
+        _daySaved = _currentDay;
+    }
+
+    public bool GameOver()
+    {
+        if (_currentWrongGuesses < maxWrong)
+            return false;
+        else return true;
     }
 }

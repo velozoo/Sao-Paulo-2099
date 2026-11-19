@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Rafael
   lastName: Cardoso
   job: "T\xE9cnico de Manuten\xE7\xE3o"
-  destinyStation: "S\xE9"
+  destinyStation: Corinthians-Itaquera
   isAllied: 0
   problem: 8
   day: 25

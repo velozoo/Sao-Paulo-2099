@@ -46,6 +46,7 @@ public class DiaryManager : MonoBehaviour
     private void UpdatePages()
     {
         _currentDay = GameManager.Instance._currentDay - 1;
+        GameManager.Instance.SaveDay();
 
         finishButton.SetActive(false);
 

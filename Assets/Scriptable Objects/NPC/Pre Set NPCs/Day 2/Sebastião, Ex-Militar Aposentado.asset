@@ -15,12 +15,12 @@ MonoBehaviour:
   name: "Sebasti\xE3o"
   lastName: Santos
   job: Ex-Militar Aposentado
-  destinyStation: "Rep\xFAblica"
+  destinyStation: Jabaquara
   isAllied: 0
   problem: 4
-  day: 17
-  month: 11
-  year: 2000
+  day: 13
+  month: 22
+  year: 1930
   entryLine: Bom dia, meu filho. Tenho consulta marcada no hospital.
   avoidLine: "Gra\xE7as a Deus. Obrigado, meu filho."
   passLine: "Os dados divergentes n\xE3o s\xE3o culpa minha, o erro \xE9 do sistema!

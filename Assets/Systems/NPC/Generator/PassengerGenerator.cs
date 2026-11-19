@@ -21,7 +21,6 @@ public enum TypesOfProblems
 
 public class PassengerGenerator : MonoBehaviour
 {
-    [SerializeField] private TypewriterEffect typewriterEffect;
     [SerializeField] private Image passengerImage;
     [SerializeField] private RectTransform passengerRectTrans;
     [SerializeField] private DialogueManager dialogueManager;

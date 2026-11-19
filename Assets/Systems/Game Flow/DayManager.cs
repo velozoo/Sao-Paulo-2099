@@ -10,6 +10,7 @@ public class DayManager : MonoBehaviour
     [SerializeField] private EmailManager emailManager;
     [SerializeField] private PassengerManager passengerManager;
     [SerializeField] private DesktopScreen desktopScreen;
+    [SerializeField] private NPCSpawner npcSpawner;
 
     [Header("Delay Before Each Event")]
     [SerializeField] private float newsDelay;
@@ -43,6 +44,12 @@ public class DayManager : MonoBehaviour
     private void Start()
     {
         StartDay();
+        FadeOnce();
+    }
+
+    public async void FadeOnce()
+    {
+        await ScreenFader.Instance.FadeIn(fadeInDuration);
     }
 
     public void StartDay()
@@ -62,11 +69,8 @@ public class DayManager : MonoBehaviour
         _passengersFinished = false;
         clockOutButton.interactable = false;
 
-        //yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(blackScreenDuration);
 
-        Task fadeTask = ScreenFader.Instance.FadeIn(fadeInDuration);
-
-        yield return new WaitUntil(() => fadeTask.IsCompleted);
 
         if (doNews)
         {
@@ -78,6 +82,9 @@ public class DayManager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(emailDelay);
+
+        npcSpawner.npcSpawn = true;
+        npcSpawner.StartSpawnNpc();
 
         emailManager.StartEmail();
 
@@ -97,6 +104,7 @@ public class DayManager : MonoBehaviour
     private void OnPassengerFinished()
     {
         _passengersFinished = true;
+        npcSpawner.npcSpawn = false;
         clockOutButton.interactable = true;
     }
 

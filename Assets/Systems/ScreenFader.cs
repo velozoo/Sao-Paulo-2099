@@ -16,7 +16,8 @@ public class ScreenFader : MonoBehaviour
             Instance = this;
         else 
             Destroy(gameObject);
-        canvasGroup.alpha = 1;
+
+        //canvasGroup.alpha = 1;
     }
 
     async Task Fade(float targetTransperancy, float fadeDuration)
@@ -71,6 +72,23 @@ public class ScreenFader : MonoBehaviour
         await Wait(blackScreenTime / 2);
 
         await FadeIn(fadeInDuration);
+    }
+    public async Task FadeOutTransition(
+       float fadeOutDuration,
+       float blackScreenTime,
+       params Func<Task>[] actions)
+    {
+        await FadeOut(fadeOutDuration);
+
+        await Wait(blackScreenTime);
+
+        foreach (Func<Task> action in actions)
+        {
+            if (action != null)
+                await action();
+        }
+
+        await Wait(blackScreenTime / 2);
     }
 
     public async Task ReverseFadeTransition(

@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Vera
   lastName: Vitalle
   job: Costureira
-  destinyStation: Ana Rosa
+  destinyStation: "Graja\xFA"
   isAllied: 0
   problem: 0
   day: 21

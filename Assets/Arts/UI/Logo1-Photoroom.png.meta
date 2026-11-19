@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 5eb5c4a907d813d44aca773518769d58
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7338842543313096547
+    second: Logo1-Photoroom_0
+  - first:
+      213: -2896587356214942306
+    second: Logo1-Photoroom_1
+  - first:
+      213: -4107353974420034333
+    second: Logo1-Photoroom_2
+  - first:
+      213: 6579606743424183333
+    second: Logo1-Photoroom_3
+  - first:
+      213: 8432103424674161946
+    second: Logo1-Photoroom_4
+  - first:
+      213: 2499931674700092595
+    second: Logo1-Photoroom_5
+  - first:
+      213: -2550503715158393000
+    second: Logo1-Photoroom_6
+  - first:
+      213: 6763359720907896368
+    second: Logo1-Photoroom_7
+  - first:
+      213: -4351212876664750224
+    second: Logo1-Photoroom_8
+  - first:
+      213: -6575378202699148878
+    second: Logo1-Photoroom_9
+  - first:
+      213: 55540760942886068
+    second: Logo1-Photoroom_10
+  - first:
+      213: -494363558608614177
+    second: Logo1-Photoroom_11
+  - first:
+      213: -9142210530455728675
+    second: Logo1-Photoroom_12
+  - first:
+      213: 9026822189106210155
+    second: Logo1-Photoroom_13
+  - first:
+      213: -8057160050600980907
+    second: Logo1-Photoroom_14
+  - first:
+      213: 698359711821593268
+    second: Logo1-Photoroom_15
+  - first:
+      213: 8082800491430737177
+    second: Logo1-Photoroom_16
+  - first:
+      213: -1468569101503588980
+    second: Logo1-Photoroom_17
+  - first:
+      213: -6609516631494287904
+    second: Logo1-Photoroom_18
+  - first:
+      213: 6283347041764557669
+    second: Logo1-Photoroom_19
+  - first:
+      213: 8967074415337984349
+    second: Logo1-Photoroom_20
+  - first:
+      213: -4587249092176142707
+    second: Logo1-Photoroom_21
+  - first:
+      213: 773297838908723665
+    second: Logo1-Photoroom_22
+  - first:
+      213: 3538033073692652254
+    second: Logo1-Photoroom_23
+  - first:
+      213: 268699767835172907
+    second: Logo1-Photoroom_24
+  - first:
+      213: 4230706903315803906
+    second: Logo1-Photoroom_25
+  - first:
+      213: 6729309985898329256
+    second: Logo1-Photoroom_26
+  - first:
+      213: 8720119712841095254
+    second: Logo1-Photoroom_27
+  - first:
+      213: 271817685015781927
+    second: Logo1-Photoroom_28
+  - first:
+      213: -3995454938324569457
+    second: Logo1-Photoroom_29
+  - first:
+      213: -7247674504873902396
+    second: Logo1-Photoroom_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Logo1-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 620
+        width: 1646
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f83b8096ec8d560800000000000000
+      internalID: 7338842543313096547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_1
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 483
+        width: 108
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95abe375214dc7d0800000000000000
+      internalID: -2896587356214942306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_2
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 483
+        width: 95
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eca7eb625fbff6c0800000000000000
+      internalID: -4107353974420034333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_3
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 483
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52c209f09757f4b50800000000000000
+      internalID: 6579606743424183333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_4
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 483
+        width: 101
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15ee09b369d40570800000000000000
+      internalID: 8432103424674161946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_5
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 483
+        width: 107
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b41f39ec9a81b220800000000000000
+      internalID: 2499931674700092595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_6
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 483
+        width: 95
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f7bab526aca9cd0800000000000000
+      internalID: -2550503715158393000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 483
+        width: 87
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03676e415d74cdd50800000000000000
+      internalID: 6763359720907896368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 483
+        width: 97
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07fba4041f26d93c0800000000000000
+      internalID: -4351212876664750224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 483
+        width: 89
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1554ccc509fb4a0800000000000000
+      internalID: -6575378202699148878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_10
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 483
+        width: 94
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc3e8e170255c000800000000000000
+      internalID: 55540760942886068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_11
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 483
+        width: 93
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc4c3376faa329f0800000000000000
+      internalID: -494363558608614177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_12
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 385
+        width: 64
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dddc956c5f7502180800000000000000
+      internalID: -9142210530455728675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_13
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 385
+        width: 63
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b652a4074f6b54d70800000000000000
+      internalID: 9026822189106210155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_14
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 385
+        width: 66
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ec5756f973f2090800000000000000
+      internalID: -8057160050600980907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_15
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 385
+        width: 68
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4baf194357211b900800000000000000
+      internalID: 698359711821593268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_16
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 385
+        width: 64
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 915f412f830eb2070800000000000000
+      internalID: 8082800491430737177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_17
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 385
+        width: 65
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8593c8de289e9be0800000000000000
+      internalID: -1468569101503588980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_18
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 385
+        width: 70
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed1fb274a74644a0800000000000000
+      internalID: -6609516631494287904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_19
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 385
+        width: 84
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563c0e808dee23750800000000000000
+      internalID: 6283347041764557669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_20
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 385
+        width: 70
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d51d6b0dba2717c70800000000000000
+      internalID: 8967074415337984349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_21
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 385
+        width: 71
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e9b944141d650c0800000000000000
+      internalID: -4587249092176142707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_22
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 201
+        width: 145
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d15bb1994e4bba00800000000000000
+      internalID: 773297838908723665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_23
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 201
+        width: 147
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2b801d55e991130800000000000000
+      internalID: 3538033073692652254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_24
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 201
+        width: 152
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b20ab05e30d9ab300800000000000000
+      internalID: 268699767835172907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_25
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 201
+        width: 150
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f6ee8638d76ba30800000000000000
+      internalID: 4230706903315803906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_26
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 201
+        width: 154
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a475fc57cf436d50800000000000000
+      internalID: 6729309985898329256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_27
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 201
+        width: 124
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65856ca7da6140970800000000000000
+      internalID: 8720119712841095254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_28
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 201
+        width: 142
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722e80f8eb0b5c300800000000000000
+      internalID: 271817685015781927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_29
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 201
+        width: 131
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82751507ea4d88c0800000000000000
+      internalID: -3995454938324569457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo1-Photoroom_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1632
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cef55900761b6b90800000000000000
+      internalID: -7247674504873902396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Logo1-Photoroom_0: 7338842543313096547
+      Logo1-Photoroom_1: -2896587356214942306
+      Logo1-Photoroom_10: 55540760942886068
+      Logo1-Photoroom_11: -494363558608614177
+      Logo1-Photoroom_12: -9142210530455728675
+      Logo1-Photoroom_13: 9026822189106210155
+      Logo1-Photoroom_14: -8057160050600980907
+      Logo1-Photoroom_15: 698359711821593268
+      Logo1-Photoroom_16: 8082800491430737177
+      Logo1-Photoroom_17: -1468569101503588980
+      Logo1-Photoroom_18: -6609516631494287904
+      Logo1-Photoroom_19: 6283347041764557669
+      Logo1-Photoroom_2: -4107353974420034333
+      Logo1-Photoroom_20: 8967074415337984349
+      Logo1-Photoroom_21: -4587249092176142707
+      Logo1-Photoroom_22: 773297838908723665
+      Logo1-Photoroom_23: 3538033073692652254
+      Logo1-Photoroom_24: 268699767835172907
+      Logo1-Photoroom_25: 4230706903315803906
+      Logo1-Photoroom_26: 6729309985898329256
+      Logo1-Photoroom_27: 8720119712841095254
+      Logo1-Photoroom_28: 271817685015781927
+      Logo1-Photoroom_29: -3995454938324569457
+      Logo1-Photoroom_3: 6579606743424183333
+      Logo1-Photoroom_30: -7247674504873902396
+      Logo1-Photoroom_4: 8432103424674161946
+      Logo1-Photoroom_5: 2499931674700092595
+      Logo1-Photoroom_6: -2550503715158393000
+      Logo1-Photoroom_7: 6763359720907896368
+      Logo1-Photoroom_8: -4351212876664750224
+      Logo1-Photoroom_9: -6575378202699148878
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Samuel
   lastName: Secco
   job: Cozinheiro
-  destinyStation: "Tamanduate\xED"
+  destinyStation: Tucuruvi
   isAllied: 0
   problem: 6
   day: 14
