@@ -16,4 +16,25 @@ MonoBehaviour:
   nickname: MarinaFranco
   numberPosts: 0
   followers: 9.532
-  posts: []
+  posts:
+  - postImage: {fileID: 21300000, guid: ed1e0fd64cab3944a85b1bb9756ee66d, type: 3}
+    likes: 8.572
+    commentaries: 98
+    description: "simplesmente o \xE1pice da arte."
+  - postImage: {fileID: 21300000, guid: 46649c025335a544fab50be4367fc119, type: 3}
+    likes: 582
+    commentaries: 54
+    description: quando acharam que nada se igualaria a Steelheart, ele veio...
+  - postImage: {fileID: 21300000, guid: 5230a82f0d2d15c4d914e885f3babbb4, type: 3}
+    likes: 77
+    commentaries: 13
+    description: "a complexidade de camadas de Steelheart vai servir como referencia
+      por s\xE9culos..."
+  - postImage: {fileID: 21300000, guid: 5230a82f0d2d15c4d914e885f3babbb4, type: 3}
+    likes: 182
+    commentaries: 7
+    description: "simplesmente a maior obra de arte j\xE1 criada."
+  - postImage: {fileID: 21300000, guid: 5230a82f0d2d15c4d914e885f3babbb4, type: 3}
+    likes: 8.572
+    commentaries: 98
+    description: "meus deu do c\xE9u, como eu amo esse jogo"

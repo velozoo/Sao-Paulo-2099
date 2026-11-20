@@ -16,6 +16,11 @@ MonoBehaviour:
   lastName: Klein
   job: Atendimento ao Cliente
   destinyStation: Palmeiras-Barra Funda
+  textAllied: "> CADASTRO CIVIL. Roberto Klein, 32 anos, analista administrativo.
+    Endere\xE7o atualizado em mar\xE7o de 2089. N\xE3o h\xE1 ocorr\xEAncias registradas
+    em esta\xE7\xF5es ou notifica\xE7\xF5es de seguran\xE7a. Consulta ao cadastro
+    de filia\xE7\xE3o: nenhum v\xEDnculo com o Sol Vermelho foi encontrado. Situa\xE7\xE3o
+    geral: regular. >"
   isAllied: 0
   problem: 0
   day: 7

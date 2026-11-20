@@ -16,8 +16,12 @@ MonoBehaviour:
   lastName: Bueno
   job: Cuidadora
   destinyStation: Estudantes
+  textAllied: "> CARTEIRA DIGITAL. C\xE9lia Bueno, 61 anos, cuidadora de idosos.
+    Est\xE1 h\xE1 seis anos no mesmo v\xEDnculo de trabalho e n\xE3o tem ocorr\xEAncias.
+    Resultado do cruzamento: filia\xE7\xE3o ao Sol Vermelho confirmada, com ades\xE3o
+    registrada em 2086. Cadastro regular nos demais itens. >"
   isAllied: 0
-  problem: 0
+  problem: 6
   day: 18
   month: 10
   year: 2028

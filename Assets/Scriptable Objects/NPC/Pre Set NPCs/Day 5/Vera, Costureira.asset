@@ -16,6 +16,10 @@ MonoBehaviour:
   lastName: Vitalle
   job: Costureira
   destinyStation: "Graja\xFA"
+  textAllied: "> CADASTRO CIVIL. Vera Vitalle, 34 anos, costureira. O filho consta
+    como filiado ao Sol Vermelho, mas a filia\xE7\xE3o n\xE3o se estende a familiares.
+    Vera Vitalle n\xE3o possui filia\xE7\xE3o ao Sol Vermelho. Cadastro regular.
+    >"
   isAllied: 0
   problem: 0
   day: 21

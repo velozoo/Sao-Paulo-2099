@@ -16,6 +16,10 @@ MonoBehaviour:
   lastName: Secco
   job: Cozinheiro
   destinyStation: Tucuruvi
+  textAllied: "> CADASTRO CIVIL. Samuel Secco, 33 anos, cozinheiro, conhecido pelo
+    apelido \u201CTripa\u201D. Trabalha em um restaurante pr\xF3ximo a uma esta\xE7\xE3o
+    central. Nenhuma ocorr\xEAncia registrada. Filia\xE7\xE3o ao Sol Vermelho: nenhuma
+    registrada. Cadastro regular. >"
   isAllied: 0
   problem: 6
   day: 14

@@ -16,6 +16,9 @@ MonoBehaviour:
   lastName: Dias
   job: Executiva
   destinyStation: Vila Prudente
+  textAllied: "> CARTEIRA DIGITAL. Bianca Dias, 44 anos, executiva. Consta uma doa\xE7\xE3o
+    empresarial a um programa de seguran\xE7a urbana. **Filia\xE7\xE3o ao Sol Vermelho:
+    n\xE3o possui.** Cadastro regular. >"
   isAllied: 0
   problem: 0
   day: 3

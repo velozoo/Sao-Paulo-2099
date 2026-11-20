@@ -16,6 +16,10 @@ MonoBehaviour:
   lastName: Russo
   job: Jornalista
   destinyStation: Luz
+  textAllied: "> RG e CARTEIRA DIGITAL. Katharine Russo, 18 anos, jornalista com
+    credencial de imprensa estudantil. Seu cadastro menciona cobertura de protestos
+    como atividade profissional, o que n\xE3o constitui v\xEDnculo com o movimento.
+    Filia\xE7\xE3o ao Sol Vermelho: n\xE3o possui. Cadastro regular. >"
   isAllied: 0
   problem: 6
   day: 22

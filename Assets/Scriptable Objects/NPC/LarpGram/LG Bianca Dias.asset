@@ -16,4 +16,8 @@ MonoBehaviour:
   nickname: bi_dias
   numberPosts: 0
   followers: 5.311
-  posts: []
+  posts:
+  - postImage: {fileID: 21300000, guid: 795a8f313433d6449a122dd3cb94e083, type: 3}
+    likes: 12
+    commentaries: 37 mil
+    description: olha gente que bixinho mais bonitin

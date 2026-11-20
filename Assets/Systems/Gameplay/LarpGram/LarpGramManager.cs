@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,7 +15,7 @@ public class LarpGramManager : MonoBehaviour
 
     public static LarpGramManager Instance;
 
-    private GameObject _postGO;
+    private List<GameObject> _postsGO = new List<GameObject>();
 
     private void Awake()
     {
@@ -27,8 +28,15 @@ public class LarpGramManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        ResetLarpGram();
+    }
+
     public void UpdateLarp(GenericPassengerData passenger)
     {
+        ResetLarpGram();
+
         LarpGramData passengerData = passenger.larpGramData;
 
         string fullName = passenger.name + " " + passenger.lastName;
@@ -42,20 +50,48 @@ public class LarpGramManager : MonoBehaviour
         if (passenger.larpGramData.posts.Count == 0)
             return;
 
-        _postGO = Instantiate(postPrefab, postSectionParent.transform.parent);
-
-        LarpGramPostGO post = _postGO.GetComponent<LarpGramPostGO>();
 
         foreach (LarpGramPost postI in passengerData.posts)
         {
-            post.SetPost(fullName, passengerData.profilePicture, postI.postImage, 
-                postI.likes, postI.commentaries, postI.description);
+            GameObject postGO = Instantiate(
+                postPrefab,
+                postSectionParent.transform
+            );
+
+            _postsGO.Add(postGO);
+
+            LarpGramPostGO post = postGO.GetComponent<LarpGramPostGO>();
+
+            post.SetPost(
+                fullName,
+                passengerData.profilePicture,
+                postI.postImage,
+                postI.likes,
+                postI.commentaries,
+                postI.description
+            );
         }
+    }
+
+    public void ResetLarpGram()
+    {
+        if( _postsGO.Count > 0 )
+        DestroyPost();
+
+        postText.text = "0";
+        followerText.text = "0";
+        nicknameText.text = "Nickname";
+        nameText.text = "Nome";
     }
 
     public void DestroyPost()
     {
-        if (_postGO != null)
-        Destroy(_postGO);
+        foreach (GameObject post in _postsGO)
+        {
+            if (post != null)
+                Destroy(post);
+        }
+
+        _postsGO.Clear();
     }
 }

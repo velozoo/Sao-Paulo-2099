@@ -8,6 +8,8 @@ public class MusicManager : MonoBehaviour
 
     public MusicLibrary musicLibrary;
     [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource ambientSource;
+    [SerializeField] private RadioHandler radioHandler;
 
     public int currentTrackIndex = 0;
 
@@ -78,5 +80,75 @@ public class MusicManager : MonoBehaviour
     public void ResumeMusic()
     {
         musicSource.UnPause();
+    }
+
+    public void FadeOutMusic(float duration)
+    {
+        radioHandler.pauseIcon.text = "0";
+        StartCoroutine(FadeVolume(0f, duration));
+    }
+
+    public void FadeInMusic(float duration)
+    {
+        musicSource.volume = 0f;
+        musicSource.Play();
+        radioHandler.pauseIcon.text = "||";
+
+        StartCoroutine(FadeVolume(1f, duration));
+    }
+
+    private IEnumerator FadeVolume(float targetVolume, float duration)
+    {
+        float startVolume = musicSource.volume;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+
+            musicSource.volume = Mathf.Lerp(
+                startVolume,
+                targetVolume,
+                elapsedTime / duration
+            );
+
+            yield return null;
+        }
+
+        musicSource.volume = targetVolume;
+    }
+
+    public void FadeOutAmbient(float duration)
+    {
+        StartCoroutine(FadeAmbientVolume(0f, duration));
+    }
+
+    public void FadeInAmbient(float duration, AudioClip clip)
+    {
+        ambientSource.volume = 0f;
+        ambientSource.clip = clip;
+        ambientSource.Play();
+
+        StartCoroutine(FadeAmbientVolume(0.15f, duration));
+    }
+    private IEnumerator FadeAmbientVolume(float targetVolume, float duration)
+    {
+        float startVolume = ambientSource.volume;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+
+            ambientSource.volume = Mathf.Lerp(
+                startVolume,
+                targetVolume,
+                elapsedTime / duration
+            );
+
+            yield return null;
+        }
+
+        ambientSource.volume = targetVolume;
     }
 }

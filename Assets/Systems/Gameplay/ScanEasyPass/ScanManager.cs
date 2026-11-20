@@ -10,6 +10,7 @@ public class ScanManager : MonoBehaviour
     [SerializeField] private SpriteRenderer silhoutteSprite;
     [SerializeField] private PolygonCollider2D passengerCollider;
     [SerializeField] private Collider2D monitorCollider;
+    [SerializeField] private GameObject npcSilhoutteGO;
 
     [Header("Text")]
     [SerializeField] private TMP_Text hasPassText;
@@ -105,7 +106,7 @@ public class ScanManager : MonoBehaviour
         hasScanned = false;
         Vector2 spawnPos = GetRandomSpawnPosition();
 
-        _currentChip =  Instantiate(chipPreFab, spawnPos, Quaternion.identity);
+        _currentChip =  Instantiate(chipPreFab, spawnPos, Quaternion.identity, npcSilhoutteGO.transform);
     }
 
     private Vector2 GetRandomSpawnPosition()
@@ -126,7 +127,7 @@ public class ScanManager : MonoBehaviour
                 return randomPosition;
         }
 
-        return defaultPos.position;
+        return defaultPos.position + new Vector3(2f, defaultPos.position.y);
     }
 
     public void AnimText(bool isScanning, float t)

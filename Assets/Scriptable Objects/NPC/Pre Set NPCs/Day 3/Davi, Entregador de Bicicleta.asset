@@ -16,6 +16,11 @@ MonoBehaviour:
   lastName: Cipriano
   job: Motoboy
   destinyStation: "S\xE3o Mateus"
+  textAllied: "> CARTEIRA DIGITAL. Davi Cipriano, 23 anos, entregador. Cadastrado
+    em plataforma de entregas desde 2087. Em 2088, aderiu a um programa de descontos
+    de uma lanchonete parceira. Resultado do cruzamento: filia\xE7\xE3o ao Sol Vermelho
+    confirmada, com ades\xE3o registrada por meio desse programa**.** O desconto
+    segue ativo. >"
   isAllied: 0
   problem: 3
   day: 8

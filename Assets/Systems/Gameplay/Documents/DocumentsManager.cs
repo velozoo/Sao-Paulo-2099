@@ -26,9 +26,9 @@ public class DocumentsManager : MonoBehaviour
     public void UpdateDocuments(GenericPassengerData passenger)
     {
         nameText.text = "Nome: " + passenger.name + " " + passenger.lastName;
-        jobText.text = "Job: " + passenger.job;
+        jobText.text = "Trabalho: " + passenger.job;
         birthDateText.text = "Data de Nascimento: " + passenger.day + "/" + passenger.month + "/" + passenger.year;
         destinationText.text = "Estação de Destino: " + passenger.destinyStation;
-        affiliatedText.text = "Está aliada ao Sol Vermelho? " + passenger.isAllied;
+        affiliatedText.text = passenger.textAllied;
     }
 }

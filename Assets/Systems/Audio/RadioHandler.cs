@@ -12,8 +12,10 @@ public enum IconType
 public class RadioHandler : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private TMP_Text musicName;
-    [SerializeField] private TMP_Text pauseIcon;
+    public TMP_Text pauseIcon;
     [SerializeField] private IconType buttonType;
+    [SerializeField] private AudioClip clickClip;
+    [SerializeField, Range(0f, 1f)] private float volume;
 
     [Header("Text Anim")]
     [SerializeField] private RectTransform textRT;
@@ -34,6 +36,7 @@ public class RadioHandler : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        SoundFXManager.Instance.PlaySoundFXClip(clickClip, volume);
         if (buttonType == IconType.Pause)
             PauseMusic();
         else if (buttonType == IconType.Next)

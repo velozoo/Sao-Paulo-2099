@@ -16,6 +16,10 @@ MonoBehaviour:
   lastName: Internetson
   job: Vendedor Ambulante
   destinyStation: Osasco
+  textAllied: "> CARTEIRA DIGITAL. Elias Internetson, 26 anos, vendedor ambulante.
+    A licen\xE7a de vendedor est\xE1 vencida. **Resultado do cruzamento: filia\xE7\xE3o
+    ao Sol Vermelho confirmada, com ades\xE3o registrada em 2089.** Cadastro irregular.
+    >"
   isAllied: 0
   problem: 6
   day: 16
@@ -26,7 +30,8 @@ MonoBehaviour:
     preciso vender umas paradas na outra esta\xE7\xE3o, t\xE1 ligado? Que atitude
     cringe \xE9 essa? Literalmente NPC behavior. Seja based, meu patr\xE3o. Brutal..."
   passLine: W guardinha.
-  voice: []
+  voice:
+  - {fileID: 8300000, guid: 7b6db24f7dda46340823d027257a577c, type: 3}
   sprite: {fileID: 21300000, guid: edd00e636b5832c428c26dfe24a3fd18, type: 3}
   larpGramData: {fileID: 11400000, guid: 29cad94b11a2d1044bc5b22af1369978, type: 2}
   easyPassData: {fileID: 11400000, guid: 0ece0ea70ab2c15478f96130547a1245, type: 2}

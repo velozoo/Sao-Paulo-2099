@@ -16,6 +16,11 @@ MonoBehaviour:
   lastName: Piccoli
   job: Enfermeiro
   destinyStation: "Ch\xE1cara Beatriz"
+  textAllied: "> CADASTRO CIVIL. Marcos Piccoli, 30 anos, enfermeiro. O cadastro
+    est\xE1 marcado como \u201Csob suspeita\u201D por causa de uma den\xFAncia an\xF4nima,
+    depois arquivada por falta de provas. Consulta ao cadastro de filia\xE7\xE3o:
+    nenhuma filia\xE7\xE3o ao Sol Vermelho foi encontrada. A den\xFAncia n\xE3o foi
+    comprovada. >"
   isAllied: 0
   problem: 2
   day: 5

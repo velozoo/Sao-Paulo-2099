@@ -15,10 +15,10 @@ MonoBehaviour:
   emailFrom: "Coordena\xE7\xE3o de Fiscaliza\xE7\xE3o <b><u>fiscalizacao@metro.sp</u></b>"
   emailFor: Inspetor
   emailSubject: "Decreto de Integridade C\xEDvica"
-  emailContent: "Prezado Inspetor,\r\n\r\nA partir de hoje, passageiros suspeitos
-    ter\xE3o o RG e a carteira digital conferidos no sistema de identifica\xE7\xE3o.
-    Leia o resultado do cruzamento cadastral exibido na tela.\r\n\r\n<b>Filia\xE7\xE3o
-    confirmada ao Sol Vermelho: entrada negada</b>, mesmo que a apar\xEAncia seja
-    comum. Em caso de dados divergentes ou situa\xE7\xE3o n\xE3o confirmada, siga
-    o procedimento de bloqueio at\xE9 o esclarecimento.\r\n\r\nAtenciosamente,\r\n\r\nCoordena\xE7\xE3o
+  emailContent: "<b>Dia 20 de Setembro de 2089</b>\n\nPrezado Inspetor,\r\n\r\nA
+    partir de hoje, passageiros suspeitos ter\xE3o o RG e a carteira digital conferidos
+    no sistema de identifica\xE7\xE3o. Leia o resultado do cruzamento cadastral exibido
+    na tela.\r\n\r\n<b>Filia\xE7\xE3o confirmada ao Sol Vermelho: entrada negada</b>,
+    mesmo que a apar\xEAncia seja comum. Em caso de dados divergentes ou situa\xE7\xE3o
+    n\xE3o confirmada, siga o procedimento de bloqueio at\xE9 o esclarecimento.\r\n\r\nAtenciosamente,\r\n\r\nCoordena\xE7\xE3o
     de Fiscaliza\xE7\xE3o"

@@ -18,10 +18,16 @@ public class PassengerValidator : MonoBehaviour
             return;
 
         if (PassengerShouldPass())
+        {
             print("_______________________acertou_______________________");
+        }
         else
+        {
+            GameManager.Instance.WrongGuess();
             print("_______________________errou_______________________");
+        }
 
+        ScanManager.Instance.ResetText();
         PassengerManager.Instance.NextPassenger(false);
     }
 
@@ -33,8 +39,12 @@ public class PassengerValidator : MonoBehaviour
         if (!PassengerShouldPass())
             print("_______________________acertou_______________________");
         else
+        {
+            GameManager.Instance.WrongGuess();
             print("_______________________errou_______________________");
+        }
 
+        ScanManager.Instance.ResetText();
         PassengerManager.Instance.NextPassenger(true);
     }
 

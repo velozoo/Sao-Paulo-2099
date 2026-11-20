@@ -16,6 +16,10 @@ MonoBehaviour:
   lastName: Sacco
   job: Aposentado
   destinyStation: "Butant\xE3"
+  textAllied: "> CADASTRO CIVIL. Jo\xE3o Ricardo Sacco, 82 anos, aposentado. Recebe
+    benef\xEDcio previdenci\xE1rio e n\xE3o tem ocorr\xEAncias. **Consulta ao cadastro
+    de filia\xE7\xE3o: o cidad\xE3o n\xE3o possui filia\xE7\xE3o ao Sol Vermelho.**
+    Cadastro regular. >"
   isAllied: 0
   problem: 7
   day: 20

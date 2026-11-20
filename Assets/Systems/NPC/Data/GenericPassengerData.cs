@@ -7,6 +7,7 @@ public class GenericPassengerData : ScriptableObject
     public string lastName;
     public string job;
     public string destinyStation;
+    public string textAllied;
     public bool isAllied;
     public TypesOfProblems problem; 
 

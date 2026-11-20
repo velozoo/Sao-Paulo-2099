@@ -16,15 +16,21 @@ MonoBehaviour:
   lastName: Santos
   job: Ex-Militar Aposentado
   destinyStation: Jabaquara
+  textAllied: "> RG e CARTEIRA DIGITAL. O RG apresenta o nome \u201CSebasti\xE3o
+    Santos\u201D. A carteira digital apresenta \u201CSebasti\xE3o A. Santos\u201D,
+    com data de nascimento diferente. O sistema encontrou dois registros poss\xEDveis
+    no cadastro de filia\xE7\xE3o, e um deles est\xE1 ligado ao Sol Vermelho. Resultado:
+    n\xE3o foi poss\xEDvel confirmar se o cidad\xE3o possui ou n\xE3o filia\xE7\xE3o
+    ao Sol Vermelho. Pend\xEAncia de corre\xE7\xE3o cadastral aberta. >"
   isAllied: 0
   problem: 4
   day: 13
   month: 22
   year: 1930
   entryLine: Bom dia, meu filho. Tenho consulta marcada no hospital.
-  avoidLine: "Gra\xE7as a Deus. Obrigado, meu filho."
-  passLine: "Os dados divergentes n\xE3o s\xE3o culpa minha, o erro \xE9 do sistema!
+  avoidLine: "Os dados divergentes n\xE3o s\xE3o culpa minha, o erro \xE9 do sistema!
     Eu s\xF3 quero ir ao m\xE9dico!"
+  passLine: "Gra\xE7as a Deus. Obrigado, meu filho."
   voice:
   - {fileID: 8300000, guid: 7b6db24f7dda46340823d027257a577c, type: 3}
   sprite: {fileID: 21300000, guid: ae55addf4dc9f8d4fbfaa2c298b5cdc2, type: 3}

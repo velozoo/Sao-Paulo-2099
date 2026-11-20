@@ -15,9 +15,9 @@ MonoBehaviour:
   emailFrom: "Coordena\xE7\xE3o de Fiscaliza\xE7\xE3o <b><u>fiscalizacao@metro.sp</u></b>"
   emailFor: Inspetor
   emailSubject: "Decreto de Neutralidade P\xFAblica"
-  emailContent: "Prezado Inspetor,\r\n\r\nO terminal do LarpGram j\xE1 est\xE1 liberado
-    na sua cabine. Para passageiros suspeitos, abra o perfil e consulte as publica\xE7\xF5es.\r\n\r\nQualquer
-    men\xE7\xE3o ao Sol Vermelho \xE9 motivo para <b>negar a entrada</b>, seja de
-    apoio, cr\xEDtica, den\xFAncia ou s\xE1tira. Lembre-se: voc\xEA aplica uma norma
-    do Metr\xF4, n\xE3o julga o cidad\xE3o.\r\n\r\nAtenciosamente,\r\n\r\nCoordena\xE7\xE3o
-    de Fiscaliza\xE7\xE3o"
+  emailContent: "<b>Dia 22 de Setembro de 2089</b>\n\nPrezado Inspetor,\r\n\r\nO
+    terminal do LarpGram j\xE1 est\xE1 liberado na sua cabine. Para passageiros suspeitos,
+    abra o perfil e consulte as publica\xE7\xF5es.\r\n\r\nQualquer men\xE7\xE3o ao
+    Sol Vermelho \xE9 motivo para <b>negar a entrada</b>, seja de apoio, cr\xEDtica,
+    den\xFAncia ou s\xE1tira. Lembre-se: voc\xEA aplica uma norma do Metr\xF4, n\xE3o
+    julga o cidad\xE3o.\r\n\r\nAtenciosamente,\r\n\r\nCoordena\xE7\xE3o de Fiscaliza\xE7\xE3o"

@@ -15,9 +15,10 @@ MonoBehaviour:
   emailFrom: "Coordena\xE7\xE3o de Fiscaliza\xE7\xE3o <b><u>fiscalizacao@metro.sp</u></b>"
   emailFor: Inspetor
   emailSubject: "Obrigatoriedade do Passa F\xE1cil"
-  emailContent: "Prezado Inspetor,\r\n\r\nO implante Passa F\xE1cil agora \xE9 obrigat\xF3rio.
-    Verifique seu status no terminal:\r\n\r\n- <b>Ativo:</b> implante presente e
-    assinatura vigente.\r\n- <b>Inativo:</b>sem implante ou assinatura vencida. <b>Entrada
-    negada.</b>\r\n\r\nO Passa F\xE1cil n\xE3o substitui as demais verifica\xE7\xF5es.
-    Ele \xE9 uma condi\xE7\xE3o a mais.\r\n\r\nAtenciosamente,\r\n\r\nCoordena\xE7\xE3o
+  emailContent: "<b>Dia 24 de Setembro de 2089</b>\n\nPrezado Inspetor,\r\n\r\nO
+    implante Passa F\xE1cil agora \xE9 obrigat\xF3rio. Verifique seu status no terminal:\r\n\r\n-
+    <b>Ativo:</b> implante presente e assinatura vigente.\r\n- <b>Inativo:</b>sem
+    implante ou assinatura vencida. <b>Entrada negada.</b>\r\n\r\nO Passa F\xE1cil
+    n\xE3o substitui as demais verifica\xE7\xF5es. Ele \xE9 uma condi\xE7\xE3o a
+    mais.\n\nInteraja com o monitor dos passageiros para utilizar o <b>Scanner.</b>\r\n\r\nAtenciosamente,\r\n\r\nCoordena\xE7\xE3o
     de Fiscaliza\xE7\xE3o"

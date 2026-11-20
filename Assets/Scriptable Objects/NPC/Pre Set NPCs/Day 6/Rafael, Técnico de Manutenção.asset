@@ -16,6 +16,10 @@ MonoBehaviour:
   lastName: Cardoso
   job: "T\xE9cnico de Manuten\xE7\xE3o"
   destinyStation: Corinthians-Itaquera
+  textAllied: "> CADASTRO CIVIL. Rafael Cardoso, 37 anos, t\xE9cnico de manuten\xE7\xE3o.
+    H\xE1 um d\xE9bito pendente com a operadora do contrato de servi\xE7o e um documento
+    com validade expirada. **N\xE3o foi encontrada nenhuma filia\xE7\xE3o ao Sol
+    Vermelho.** Cadastro irregular por pend\xEAncias administrativas. >"
   isAllied: 0
   problem: 8
   day: 25

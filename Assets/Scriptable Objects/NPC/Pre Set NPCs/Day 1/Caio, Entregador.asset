@@ -16,17 +16,18 @@ MonoBehaviour:
   lastName: Sanchez
   job: Entregador
   destinyStation: "Cap\xE3o Redondo"
+  textAllied: 
   isAllied: 1
   problem: 1
   day: 17
   month: 3
   year: 2063
   entryLine: Bom dia, chefe! Posso passar rapidinho? Tenho entrega pra fazer.
-  avoidLine: "\xC9 s\xF3 uma jaqueta, cara! Eu tenho entrega pra fazer, vou perder
+  avoidLine: "\xC9 s\xF3 uma camisa, cara! Eu tenho entrega pra fazer, vou perder
     o turno por causa de um bordado?"
   passLine: Valeu, chefe. Bom dia.
   voice:
   - {fileID: 8300000, guid: 7b6db24f7dda46340823d027257a577c, type: 3}
-  sprite: {fileID: 21300000, guid: 3766393b35253f94a824eb9e04840881, type: 3}
+  sprite: {fileID: 21300000, guid: c9326a918d97610469afa13f1265d0ee, type: 3}
   larpGramData: {fileID: 0}
   easyPassData: {fileID: 0}

@@ -16,4 +16,8 @@ MonoBehaviour:
   nickname: CabaDeXangai
   numberPosts: 0
   followers: 57 mil
-  posts: []
+  posts:
+  - postImage: {fileID: 21300000, guid: cd32e7d67e84d6e4e979e48043f90170, type: 3}
+    likes: 10.4 mil
+    commentaries: 3.345
+    description: "\xD3 pa ai xian yan bao"

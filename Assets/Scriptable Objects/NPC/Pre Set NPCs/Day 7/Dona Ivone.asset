@@ -16,6 +16,10 @@ MonoBehaviour:
   lastName: Torvald
   job: Aposentado
   destinyStation: Tucuruvi
+  textAllied: "> CADASTRO CIVIL. Ivone, trabalhadora dom\xE9stica. Est\xE1 h\xE1
+    mais de vinte anos no mesmo endere\xE7o, sem ocorr\xEAncias. **Consulta ao cadastro
+    de filia\xE7\xE3o: nenhum v\xEDnculo com o Sol Vermelho foi encontrado.** Cadastro
+    regular. >"
   isAllied: 0
   problem: 7
   day: 6
@@ -26,6 +30,8 @@ MonoBehaviour:
   avoidLine: "Eu n\xE3o tenho como pagar essa assinatura, mo\xE7o. Tem um grupo l\xE1
     fora, onde eu vou?"
   passLine: "Que Deus te aben\xE7oe, meu filho. Obrigada."
+  voice:
+  - {fileID: 8300000, guid: 27d3119d39dbc094dbc071724afde1d1, type: 3}
   sprite: {fileID: 21300000, guid: f97fb35a647725449bc4031a6ece72d8, type: 3}
   larpGramData: {fileID: 11400000, guid: 51054f6f3705ca245bcaadcdd9efa60e, type: 2}
   easyPassData: {fileID: 11400000, guid: 1fdd110a99091c9448961311495d99d5, type: 2}

@@ -18,6 +18,9 @@ public class DecideButton : MonoBehaviour,
     [SerializeField] private float releaseDuration = 0.2f;
     [SerializeField] private Ease pressEase = Ease.OutQuad;
     [SerializeField] private Ease releaseEase = Ease.OutBack;
+    [SerializeField] private AudioClip buttonClickDown;
+    [SerializeField] private AudioClip buttonClickUp;
+    [SerializeField, Range(0f, 1f)] private float volume;
 
     private float originalY;
     private bool isHolding;
@@ -31,6 +34,7 @@ public class DecideButton : MonoBehaviour,
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        SoundFXManager.Instance.PlaySoundFXClip(buttonClickDown, volume);
         isHolding = true;
         canDecide = false;
         AnimateButton(true);
@@ -54,6 +58,7 @@ public class DecideButton : MonoBehaviour,
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        SoundFXManager.Instance.PlaySoundFXClip(buttonClickUp, volume);
         if (!isHolding)
             return;
 

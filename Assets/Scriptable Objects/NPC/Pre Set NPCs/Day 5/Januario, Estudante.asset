@@ -16,20 +16,21 @@ MonoBehaviour:
   lastName: Chuanfu
   job: Desempregado
   destinyStation: "Cap\xE3o Redondo"
+  textAllied: "> RG e CARTEIRA DIGITAL. Janu\xE1rio Chuanfu, chino-bahiano, estudante
+    com bolsa de estudos ativa. Nenhuma pend\xEAncia de documentos. Nenhum v\xEDnculo
+    de filia\xE7\xE3o com o Sol Vermelho foi registrado. Cadastro regular. >"
   isAllied: 0
   problem: 1
   day: 6
   month: 6
   year: 2056
   entryLine: "Oxente, bom dia, meu rei! N\u01D0 h\u01CEo! Tudo em paz?"
-  avoidLine: "Oxente! Foi minha mochila, n\xE9, l\u01CEob\u01CEn? \xC9 s\xF3 um adesivo,
+  avoidLine: "Oxente! Foi por isso, n\xE9, l\u01CEob\u01CEn? \xC9 s\xF3 um adesivo,
     meu rei! Ganhei de um p\xE9ngy\u01D2u, t\xE1 entendendo? M\xE9i w\xE8nt\xED,
     cabra t\u01CEoy\xE0n da molestia!"
-  passLine: "Oxente! Foi por isso, n\xE9, l\u01CEob\u01CEn? \xC9 s\xF3 um adesivo,
-    meu rei! Ganhei de um p\xE9ngy\u01D2u, t\xE1 entendendo? M\xE9i w\xE8nt\xED,
-    cabra t\u01CEoy\xE0n da molestia!"
+  passLine: "Xi\xE8xi\xE8, meu rei! Boa tarde, n\u01D0 h\u01CEo!"
   voice:
   - {fileID: 8300000, guid: 7b6db24f7dda46340823d027257a577c, type: 3}
-  sprite: {fileID: 21300000, guid: f37b341f9d9f31f41a3c0703da1455ba, type: 3}
+  sprite: {fileID: 21300000, guid: dfc0c0759f7a4224e94807823ba9a706, type: 3}
   larpGramData: {fileID: 11400000, guid: f755e62a6207660468ea37927df39b14, type: 2}
   easyPassData: {fileID: 0}

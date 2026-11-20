@@ -68,6 +68,7 @@ public class DialogueManager : MonoBehaviour
         ResetAll();
 
         HideText();
+        passTextGO.SetActive(false);
         //ShowText(inspTextGO);
         inspTextGO.SetActive(true);
 
@@ -144,9 +145,9 @@ public class DialogueManager : MonoBehaviour
         else
         {
             ShowText();
-            passengerText.text = passenger.avoidLine;
+            passengerText.text = passenger.passLine;
             AdjustText(passengerText);
-            passengerText.text = passengerEffect + passenger.avoidLine;
+            passengerText.text = passengerEffect + passenger.passLine;
 
             passengerWriter.StartWriter();
 

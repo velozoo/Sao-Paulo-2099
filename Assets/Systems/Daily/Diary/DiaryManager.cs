@@ -23,6 +23,8 @@ public class DiaryManager : MonoBehaviour
     [Header("Others")]
     [SerializeField] private GameObject diaryScreen;
     [SerializeField] private GameObject finishButton;
+    [SerializeField] private AudioClip typeClip;
+    [SerializeField, Range(0f, 1f)] private float volume;
 
     private List<DiaryData> _currentPages = new List<DiaryData>();
     private int _currentDay;
@@ -46,7 +48,6 @@ public class DiaryManager : MonoBehaviour
     private void UpdatePages()
     {
         _currentDay = GameManager.Instance._currentDay - 1;
-        GameManager.Instance.SaveDay();
 
         finishButton.SetActive(false);
 
@@ -96,6 +97,11 @@ public class DiaryManager : MonoBehaviour
             _currentPage--;
             DisplayPage(true);
         }
+    }
+
+    public void PlayTypeSound()
+    {
+        SoundFXManager.Instance.PlaySoundFXClip(typeClip, volume);
     }
 
     public async void FinishDay()

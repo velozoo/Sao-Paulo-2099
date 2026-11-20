@@ -16,6 +16,11 @@ MonoBehaviour:
   lastName: Steinhauer
   job: Programador
   destinyStation: "J\xFAlio Prestes"
+  textAllied: "> CADASTRO CIVIL. Andr\xE9 Steinhauer, 40 anos, programador. Visto
+    de trabalho remoto aprovado recentemente. Seu nome aparece na lista de participantes
+    de um evento de tecnologia, ao lado de uma pessoa filiada ao movimento, o que
+    n\xE3o gera v\xEDnculo entre eles. O cidad\xE3o n\xE3o possui filia\xE7\xE3o
+    ao Sol Vermelho. Cadastro regular. >"
   isAllied: 0
   problem: 0
   day: 17

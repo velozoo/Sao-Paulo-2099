@@ -16,17 +16,20 @@ MonoBehaviour:
   lastName: Azevedo
   job: "Atendente de F\xE1rmacia"
   destinyStation: "Butant\xE3"
+  textAllied: "> CADASTRO CIVIL. L\xEDvia Azevedo, 25 anos, atendente de farm\xE1cia.
+    Reside com a fam\xEDlia. Nenhuma ocorr\xEAncia registrada. Filia\xE7\xE3o ao
+    Sol Vermelho: nenhuma registrada. Cadastro regular. >"
   isAllied: 1
   problem: 1
   day: 31
   month: 12
   year: 2063
   entryLine: "Bom dia! Sa\xED correndo da farm\xE1cia, vim direto pra c\xE1."
-  avoidLine: "\xC9 um bottonzinho no canto da camiseta, pelo amor de Deus! Eu nem
-    participo de nada. S\xF3 acho aesthetic."
+  avoidLine: "??? \xC9 s\xF3 um adesivinho no canto da jaqueta, pelo amor de Deus!
+    Eu nem participo de nada. S\xF3 acho aesthetic."
   passLine: Obrigada, bom dia.
   voice:
   - {fileID: 8300000, guid: 27d3119d39dbc094dbc071724afde1d1, type: 3}
-  sprite: {fileID: 21300000, guid: 7858329a140d29047b79d7ff050d5c3b, type: 3}
+  sprite: {fileID: 21300000, guid: ad98f870e73414b428f1ca520286f3d4, type: 3}
   larpGramData: {fileID: 0}
   easyPassData: {fileID: 0}

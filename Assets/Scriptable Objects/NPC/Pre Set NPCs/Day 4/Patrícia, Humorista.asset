@@ -16,6 +16,10 @@ MonoBehaviour:
   lastName: "Lingui\xE7a"
   job: Humorista
   destinyStation: "Br\xE1s"
+  textAllied: "> CARTEIRA DIGITAL. Patr\xEDcia Lingui\xE7a, 37 anos, humorista. Comprovante
+    de resid\xEAncia vencido e uma multa por apresenta\xE7\xE3o em via p\xFAblica
+    ainda pendente. Filia\xE7\xE3o ao Sol Vermelho: n\xE3o possui. Cadastro irregular
+    por pend\xEAncias administrativas. >"
   isAllied: 0
   problem: 4
   day: 29

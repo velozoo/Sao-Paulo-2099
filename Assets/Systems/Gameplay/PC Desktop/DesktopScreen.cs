@@ -20,6 +20,8 @@ public class DesktopScreen : MonoBehaviour, IPointerClickHandler
     [SerializeField] private Ease posEase;
     [SerializeField] private float waitToOpen;
     [SerializeField] private float fadeDuration;
+    [SerializeField] private AudioClip turnOnClip;
+    [SerializeField, Range(0f, 1f)] private float volume;
 
     public bool _hasOpenToday = false;
 
@@ -64,8 +66,10 @@ public class DesktopScreen : MonoBehaviour, IPointerClickHandler
         {
             gameContent.transform.localScale = initialScale;
             rt.anchoredPosition = initialPos;
+            SoundFXManager.Instance.PlaySoundFXClip(turnOnClip, volume);
             DOVirtual.DelayedCall(waitToOpen, () =>
             {
+
                 OpenScreen();
             });
 

@@ -16,8 +16,11 @@ MonoBehaviour:
   lastName: Trevas
   job: Auxiliar de Enfermeira
   destinyStation: "Jundia\xED"
+  textAllied: "> CADASTRO CIVIL. Joana Trevas, 36 anos, auxiliar de enfermagem. Seu
+    nome consta em um abaixo-assinado interno do hospital sobre escalas de trabalho.
+    **Filia\xE7\xE3o ao Sol Vermelho: nenhuma registrada.** Cadastro regular. >"
   isAllied: 0
-  problem: 0
+  problem: 6
   day: 30
   month: 6
   year: 2053
@@ -25,7 +28,8 @@ MonoBehaviour:
   avoidLine: "Foi s\xF3 uma cr\xEDtica ao governo, n\xE3o \xE9 crime. Eu s\xF3 quero
     chegar em casa."
   passLine: Obrigada. Boa noite.
-  voice: []
+  voice:
+  - {fileID: 8300000, guid: 27d3119d39dbc094dbc071724afde1d1, type: 3}
   sprite: {fileID: 21300000, guid: e842be4cc531cbf4290cca90768458b4, type: 3}
   larpGramData: {fileID: 11400000, guid: 897693caae0b6aa4fbf0d1f9fceb8cdb, type: 2}
   easyPassData: {fileID: 11400000, guid: 35daf07fd602f4c4fac6cdca87810a2d, type: 2}

@@ -15,9 +15,10 @@ MonoBehaviour:
   emailFrom: "Coordena\xE7\xE3o de Fiscaliza\xE7\xE3o <b><u>fiscalizacao@metro.sp</u></b>"
   emailFor: Inspetor
   emailSubject: "Protocolo de Inspe\xE7\xE3o: Per\xEDodo Eleitoral"
-  emailContent: "Prezado Inspetor,\n\nDurante o per\xEDodo eleitoral, a entrada de
-    passageiros com s\xEDmbolos, adesivos ou pe\xE7as de roupa que aludam diretamente
-    ao Sol Vermelho est\xE1 <b>proibida</b>. Cor isolada n\xE3o \xE9 s\xEDmbolo.\n\nPara
-    quem for aprovado, abra o Mapa do Metr\xF4 Guiado e confira a esta\xE7\xE3o final
-    informada. Esta\xE7\xF5es inexistentes ou trajetos imposs\xEDveis devem aumentar
-    sua desconfian\xE7a.\n\nAtenciosamente,\n\nCoordena\xE7\xE3o de Fiscaliza\xE7\xE3o"
+  emailContent: "<b>Dia 19 de Setembro de 2089</b>\n\nPrezado Inspetor,\n\nDurante
+    o per\xEDodo eleitoral, a entrada de passageiros com s\xEDmbolos, adesivos ou
+    pe\xE7as de roupa que aludam diretamente ao Sol Vermelho est\xE1 <b>proibida</b>.
+    Cor isolada n\xE3o \xE9 s\xEDmbolo.\n\nPara quem for aprovado, abra o Mapa do
+    Metr\xF4 Guiado e confira a esta\xE7\xE3o final informada. Esta\xE7\xF5es inexistentes
+    ou trajetos imposs\xEDveis devem aumentar sua desconfian\xE7a.\n\nAtenciosamente,\n\nCoordena\xE7\xE3o
+    de Fiscaliza\xE7\xE3o"

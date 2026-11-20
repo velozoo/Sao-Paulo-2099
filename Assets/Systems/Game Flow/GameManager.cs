@@ -51,6 +51,31 @@ public class GameManager : MonoBehaviour
     {
         _daySaved = _currentDay;
     }
+    public void LoadDay()
+    {
+        _currentDay = _daySaved;
+    }
+    public void RestartGame()
+    {
+        _currentDay = 1;
+        SaveDay();
+    }
+    public void ResetGuesses()
+    {
+        _currentWrongGuesses = 0;
+    }
+    public void WrongGuess()
+    {
+        _currentWrongGuesses++;
+    }
+
+    public bool GameFinished()
+    {
+        if (_currentDay == 7)
+            return true;
+        else
+            return false;
+    }
 
     public bool GameOver()
     {

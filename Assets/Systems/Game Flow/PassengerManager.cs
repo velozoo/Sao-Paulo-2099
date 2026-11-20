@@ -14,7 +14,9 @@ public class PassengerManager : MonoBehaviour
     [Header("NPCs per day")]
     [SerializeField] private List<PassengerDay> days;
     [SerializeField] private float waitBetweenPassenger;
-    [SerializeField] private float minWait;
+    [SerializeField] private float minWait; 
+    [SerializeField] private GenericPassengerData finalPassenger;
+    [SerializeField] private int specialPassengerDay = 7;
 
     public GenericPassengerData _currentPassenger;
     [HideInInspector] public bool _passengerIsTransitioning;
@@ -110,12 +112,33 @@ public class PassengerManager : MonoBehaviour
         }
 
         _passengerIsTransitioning = true;
-        //ToggleCallNext(false);
 
-        int passengerIndex = UnityEngine.Random.Range(
-            0,
-            _days[_currentDay].passengers.Count
-        );
+        int passengerIndex;
+
+        bool isSpecialDay = _currentDay == specialPassengerDay - 1;
+
+        if (isSpecialDay &&
+            _days[_currentDay].passengers.Count > 1)
+        {
+            List<GenericPassengerData> availablePassengers =
+                _days[_currentDay].passengers.FindAll(
+                    p => p != finalPassenger
+                );
+
+            passengerIndex = _days[_currentDay].passengers.IndexOf(
+                availablePassengers[UnityEngine.Random.Range(
+                    0,
+                    availablePassengers.Count
+                )]
+            );
+        }
+        else
+        {
+            passengerIndex = UnityEngine.Random.Range(
+                0,
+                _days[_currentDay].passengers.Count
+            );
+        }
 
         _currentPassenger = _days[_currentDay].passengers[passengerIndex];
 

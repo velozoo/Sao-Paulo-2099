@@ -16,15 +16,19 @@ MonoBehaviour:
   lastName: Rakib
   job: Social Media
   destinyStation: Vila Madalena
+  textAllied: "> CARTEIRA DIGITAL. Edna Rakib, 31 anos, trabalhadora aut\xF4noma
+    e vendedora em feiras de artesanato. Registrou duas mudan\xE7as de endere\xE7o
+    nos \xFAltimos doze meses. N\xE3o consta filia\xE7\xE3o ao Sol Vermelho em nenhum
+    dos registros consultados. Cadastro regular. >"
   isAllied: 0
   problem: 5
   day: 23
   month: 7
   year: 2057
   entryLine: "Oi, boa tarde! Vou pro meu atendimento, fa\xE7o esse caminho toda semana."
-  avoidLine: Valeu. Boa tarde.
-  passLine: "Eu fa\xE7o esse trajeto toda semana! Se mudaram a conex\xE3o, ningu\xE9m
+  avoidLine: "Eu fa\xE7o esse trajeto toda semana! Se mudaram a conex\xE3o, ningu\xE9m
     me avisou."
+  passLine: Valeu. Boa tarde.
   voice:
   - {fileID: 8300000, guid: 27d3119d39dbc094dbc071724afde1d1, type: 3}
   sprite: {fileID: 21300000, guid: 916c77136131a3d46ab484993e8842f5, type: 3}
